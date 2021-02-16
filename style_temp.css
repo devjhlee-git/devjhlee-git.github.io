@@ -1,0 +1,798 @@
+/* TABLE OF CONTENT
+======================================
+# 1. Main Styles
+# 2. Text
+# 3. Header
+# 4. Intro
+# 5. Message 1
+# 6. Photo 1
+# 7. Photo 2
+# 8. Photo 3
+# 9. Photo 4567
+#10. Location
+#11. Contact
+#12. Accounts
+#13. Responsive
+======================================
+*/
+
+/*# 1. Main Styles*/
+body {
+  font: 300 15px/24px Roboto Condensed;
+  min-height: 100%;
+  height: 100%;
+  color: #000;
+  background-color: #fcfcf2
+}
+
+body b {
+  font: 500 15px/24px Roboto Condensed;
+}
+
+html {
+  min-height: 100%;
+  height: 100%
+}
+
+.page {
+  min-height: 100%;
+  position: relative;
+  height: 100%;
+  background-color: #fcfcf2
+}
+
+section {
+  width: 100%;
+  overflow: hidden;
+  text-align: center;
+  position: relative;
+  padding: 0
+}
+
+a {
+  color: #6F6F6F;
+
+}
+
+.container {
+  position: relative;
+  z-index: 1;
+  padding: 60px 16px 48px;
+  max-width: 970px
+
+}
+
+h2 {
+  font: 46px/48px Great Vibes;
+  text-align: center;
+  margin: 0 0 20px 0;
+}
+
+h2:after {
+  display: block;
+  content: "";
+  width: 16px;
+  height: 26px;
+  margin: 12px auto 0
+}
+
+h2 b {
+  font: 400 46px/48px Roboto Condensed
+}
+
+h2 span {
+  font: 300 26px/40px Roboto Condensed;
+  padding: 0 13px 0 0
+}
+
+h2 span:after {
+  display: inline-block;
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 40px;
+  transform: rotate(17deg);
+  margin: 9px 0 0 13px;
+  background: #D9C6B1
+}
+
+hr {
+  max-width: 500px;
+  border: 0;
+  height: 1px;
+  background: #757575;
+  margin: 48px auto 0
+}
+
+.btn {
+  font: 500 14px Roboto Condensed;
+  padding: 8px;
+  border-radius: 0;
+  margin: 20px 4px;
+  overflow: hidden;
+  position: relative;
+  background: none;
+  min-width: 88px;
+  min-height: 36px;
+  transition: 0.5s all;
+}
+
+.btn:active, .btn:focus {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+  color: #FFF !important
+}
+
+/*# 2. White  Text*/
+.white_txt {
+  color: #FFF;
+  background-color: #65666B
+}
+
+.white_txt h2 {
+  color: #FFF
+}
+
+.white_txt h2 span:after {
+  background: #FFF
+}
+
+.white_txt .slash i {
+  background: #FFF
+}
+
+.white_txt a {
+  color: #FFF
+}
+
+.black_txt {
+  color: #000;
+  background-color: #FFF
+}
+
+/*# 3. Header*/
+header {
+  position: fixed;
+  height: 64px;
+  width: 100%;
+  z-index: 10;
+}
+
+/*# 4. Intro*/
+.home_intro {
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  text-align: center;
+  vertical-align: middle;
+  
+}
+
+.into_firefly {
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+  position: absolute
+}
+
+.into_firefly div {
+  border-radius: 50%;
+  opacity: 0.8
+}
+
+.home_txt {
+  position: absolute;
+  margin: 0;
+  width: 100%;
+  z-index: 40;
+  bottom: 400px;
+}
+
+@keyframes mouse-down {
+  0% {
+    top: 0px;
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    top: 12px;
+    opacity: 0;
+  }
+}
+
+
+
+/*# 5. Message 1 */
+.message1 {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: left;
+}
+
+.message1 .container {
+}
+
+.message1_container {
+  z-index: 2;
+  position: relative;
+  text-align: left;
+
+}
+
+
+.message1_container .title31 {
+  width: 500px;
+  margin: 0 auto
+}
+
+.message1_container .title32 {
+  width: 500px;
+  margin: 0 auto
+}
+
+.message1 .over {
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  display: block;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0
+}
+
+.when_where h2 {
+  margin: 0 0 50px 0;
+  opacity: 0.8
+}
+
+.when_where h2:after {
+  display: none
+}
+
+.title0 {
+  font: 300 36px/44px Roboto Condensed;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.title1 {
+  font: 46px/48px Great Vibes;
+}
+
+.title1_2 {
+  text-indent: -15px;
+  font: 52px/56px Great Vibes;
+}
+.box{
+  padding: 20px;
+  background: rgb(34, 34, 34); /* for IE */
+  background: rgba(34, 34, 34, 0.5);
+  width: 100%;
+  overflow: none;
+  display: block;
+  margin: auto;
+  border-radius: 2px;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.title2 {
+  font: 56px/60px Roboto Condensed;
+  margin: 0 0 13px 0;
+  letter-spacing: -1px
+}
+
+.title3 {
+  font: 24px/32px Yeon Sung;
+  margin: 0 0 5px 0;
+}
+
+.title31 {
+  font: 32px/40px Yeon Sung;
+  margin: 0 0 5px 0;
+}
+
+.title32 {
+  font: 24px/32px Yeon Sung;
+  margin: 0 0 5px 0;
+}
+
+.title4 {
+  font: 300 34px/40px Roboto Condensed;
+  text-transform: uppercase
+}
+
+.title5 {
+  font: 300 14px/24px Roboto Condensed;
+  text-transform: uppercase;
+  margin: -5px 0 20px
+}
+
+@keyframes camera-pulse {
+  0% {
+    transform: scale(1);
+    opacity: 0.6
+  }
+  30% {
+    transform: scale(1.3);
+    opacity: 1
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0.6
+  }
+}
+
+/*# 6. Photo1*/
+
+.photo1 {
+  background-size: 640px auto;
+  width: 100%;
+  height: 100%;
+  max-height: 640px;
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: scroll;
+}
+
+.photo1_txt {
+  position: absolute;
+  margin: 0;
+  width: 100%;
+  bottom: 200px;
+}
+
+.box2{
+  padding: 20px;
+  background: rgb(34, 34, 34); /* for IE */
+  background: rgba(34, 34, 34, 0);
+  width: 50%;
+  overflow: none;
+  display: block;
+  margin: auto;
+  border-radius: 2px;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.photo1_txt1 {
+  font: 32px/40px Great Vibes;
+}
+
+.photo1_txt2 {
+  font: 24px/32px Great Vibes;
+}
+
+
+/*# 7. Photo2*/
+
+.photo2 {
+  background-size: 640px auto;
+  width: 100%;
+  height: 100%;
+  max-height: 640px;
+  margin:20px 0px;
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: scroll;
+}
+
+.photo2_txt {
+  position: absolute;
+  margin: 0;
+  width: 100%;
+  z-index: 40;
+  bottom: 500px;
+}
+
+.box2{
+  padding: 20px;
+  background: rgb(34, 34, 34); /* for IE */
+  background: rgba(34, 34, 34, 0);
+  width: 70%;
+  overflow: none;
+  display: block;
+  margin: auto;
+  border-radius: 2px;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.photo2_txt1 {
+  font: 36px/44px Great Vibes;
+  color: #000;
+}
+
+.photo2_txt2 {
+  font: 24px/32px Great Vibes;
+}
+
+
+/*# 8. Photo3*/
+
+.photo3 {
+  background-size: 640px auto;
+  width: 100%;
+  height: 100%;
+  max-height: 640px;
+  margin:20px 0px;
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: scroll;
+}
+
+.photo3_txt {
+  position: absolute;
+  margin: 0;
+  width: 100%;
+  z-index: 40;
+  bottom: 450px;
+}
+
+.box3{
+  padding: 20px;
+  background: rgb(34, 34, 34); /* for IE */
+  background: rgba(34, 34, 34, 0);
+  width: 70%;
+  overflow: none;
+  display: block;
+  margin: auto;
+  border-radius: 2px;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.photo3_txt1 {
+  font: 36px/44px Great Vibes;
+  color: #FFF;
+}
+
+.photo3_txt2 {
+  font: 48px/56px Great Vibes;
+}
+
+
+
+/*# 9. Photo4567*/
+
+.photo4 {
+  background-size: 640px auto;
+  width: 100%;
+  height: 100%;
+  max-height: 640px;
+  margin:20px 0px;
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: scroll;
+}
+
+/*# 10. Location*/
+.images {
+  width: 100%;
+  max-width: 500px;
+  height: 468px;
+  position: relative;
+  margin: 0px auto;
+  border-radius: 5px;
+  text-align: center;
+  vertical-align: middle;
+  background-size: 500px 468px;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+.married_txt b{
+  font: 32px/40px Yeon Sung;
+  margin: 20px 0px;
+  text-align: center;
+}
+
+.married_txt1{
+  font: 16px/24px Great Vibes;
+  margin: 20px 0px;
+  text-align: center;
+}
+
+.married_txt1 b{
+  font: 24px/32px Yeon Sung;
+  margin: 20px 0px;
+  text-align: center;
+}
+
+.married_txt2 {
+  font: 16px/24px Yeon Sung;
+  margin: 0 0 5px 0;
+  text-align: center;
+}
+
+.married_txt2 b {
+  font: 20px/28px Yeon Sung;
+  margin: 0 0 5px 0;
+  text-align: center;
+  color: #000
+}
+
+.married_txt3 {
+  font: 32px/36px Yeon Sung;
+  margin: 0 0 5px 0;
+  text-align: center;
+}
+
+.married_txt3 b {
+  font: 40px/44px Yeon Sung;
+  margin: 0 0 5px 0;
+  text-align: center;
+  color: #000
+}
+
+.location {
+  overflow: visible;
+
+}
+
+
+/*# 11. Contact */
+
+h3 {
+  font: 32px/40px Great Vibes
+}
+
+h4 {
+  font: 28px/36px Great Vibes
+}
+
+h4 b{
+  font: 28px/32px Great Vibes
+}
+
+
+h5 {
+  font: 20px/28px Great Vibes
+}
+
+h5 b{
+  font: 20px/28px Great Vibes
+}
+
+
+
+/*# 12. Accounts*/
+
+
+
+
+
+
+/*# 13. Responsive*/
+
+@media (max-width: 992px) {
+  .owl-controls {
+    margin: 0 0 20px 0
+  }
+
+  .gallery .owl-buttons {
+    margin: -70px 0 0 0
+  }
+
+}
+
+@media (max-width: 768px) {
+  .story_txt p, .story_title {
+    margin: 0;
+  }
+
+  .photo1 {
+    background-attachment: scroll;
+  }
+
+  .photo2 {
+    background-attachment: scroll;
+  }
+
+  .hotel {
+    background-attachment: scroll;
+  }
+
+  .when_where {
+    background-attachment: scroll;
+  }
+
+  .images {
+    background-attachment: scroll;
+  }
+
+  .photo1_txt1 {
+    font: 24px/32px Great Vibes;
+  }
+
+  .photo1_txt2 {
+    font: 16px/24px Great Vibes;
+  }
+
+  .photo1_txt {
+    position: absolute;
+    margin: 0;
+    width: 100%;
+    z-index: 40;
+    bottom: 200px;
+  }
+
+  .footer_over {
+    display: none
+  }
+
+  .envelope_back, .envelope_front {
+    display: none
+  }
+
+  #envelope {
+    min-height: 200px !important;
+  }
+
+  .paper {
+    width: 100%;
+    height: auto;
+    background-size: cover !important;
+    left: 0;
+    margin: 0 !important;
+    background-repeat: no-repeat !important;
+  }
+
+  .im1, .im2 {
+    display: none;
+  }
+
+}
+
+@media (max-width: 480px) {
+  .story_txt p {
+    margin: 0;
+  }
+
+  .owl-controls {
+    zoom:0.5;
+  }
+
+  .gallery .owl-buttons {
+    margin: -40px 0 0 0
+  }
+
+  .owl-carousel:hover .owl-next, .owl-carousel:hover .owl-prev {
+    background: none !important
+  }
+
+  .im1, .im2 {
+    display: none;
+  }
+
+  h2 {
+    font: 34px/40px Great Vibes
+  }
+
+  h2 span {
+    font: 400 24px/32px Roboto Condensed
+  }
+
+  h2 span:after {
+    margin: 0 0 0 10px
+  }
+
+  .sub_menu {
+    width: 100%
+  }
+
+  .sub_menu.active {
+    width: 100%
+  }
+
+  .sub_img {
+    display: none
+  }
+
+  .photocamera span {
+    display: none
+  }
+
+  .gallery_item {
+    width: 100%
+  }
+
+  .paper h2 {
+    font-size: 28px !important
+  }
+
+  .paper h2 span {
+    font-size: 18px !important
+  }
+
+  .form-control {
+    font-size: 14px !important
+  }
+
+  .envelope p {
+    display: none
+  }
+
+  .footer {
+    background-attachment: scroll
+  }
+
+  .story_img {
+    width: 200px;
+    height: 200px;
+    left: 50%;
+    margin: 0 0 0 -100px;
+    position: absolute;
+    border-radius: 50%;
+    z-index: 5;
+  }
+
+  .story_img:before {
+    border: 10px solid rgba(255, 255, 255, 0.4);
+    border-radius: 50%;
+    content: "";
+    display: block;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+  }
+
+  .story_plane {
+    width: 100%;
+    left: 0;
+    background: none
+  }
+
+  .story_txt {
+    padding: 0 24px;
+    margin: 220px 0 0
+  }
+
+  .story_back, .story_img_plane, .story_title:after, .story_title:before, .owl-pagination {
+    display: none
+  }
+
+  .youtube {
+    margin: -11px 0 0 -20px
+  }
+
+  .story_title {
+    margin: 0
+  }
+
+  .story_wrapper .owl-wrapper-outer {
+    box-shadow: 0 0 0;
+    background: none
+  }
+
+  .story_item, .guest_wrapper {
+    height: auto;
+  }
+
+  .guest_wrapper .owl-buttons, .registry .owl-buttons {
+    display: block;
+  }
+
+}
+
+a.maplink:hover {
+  text-decoration: none;
+}
+
+a.maplink:link {
+  text-decoration: none;
+}
+
+a.maplink:active {
+  text-decoration: none;
+}
+
+a.maplink:visited {
+  text-decoration: none;
+}
