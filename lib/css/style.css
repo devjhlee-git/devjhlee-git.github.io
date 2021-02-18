@@ -1,0 +1,290 @@
+body {
+  min-height: 100%;
+  height: 100%;
+  color: #000;
+  background-color: #000000;
+}
+
+html {
+  min-height: 100%;
+  height: 100%
+}
+
+section {
+  width: 100%;
+  overflow: hidden;
+  text-align: center;
+  position: relative;
+  padding: 0
+}
+
+.page {
+  min-height: 100%;
+  position: relative;
+  height: 100%;
+}
+
+.main_ticket {
+  background-size: 640px auto;
+  width: 100%;
+  height: 1410px;
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: scroll;
+}
+
+.notice {
+  background-size: 640px auto;
+  width: 100%;
+  height: 570px;
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: scroll;
+}
+
+.photo_booth{
+  background-size: 640px auto;
+  width: 100%;
+  height: 74px;
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: scroll;
+}
+
+.photo_grid{
+	background-size: 640px auto;
+	width: 100%;
+	height: 640px;
+	position: relative;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: scroll;
+}
+
+.row {
+	margin-top: 6px;
+}
+
+.column {
+	margin: -3px;
+	object-fit: cover;
+	width: 214px;
+	height: 214px;
+}
+
+.column:hover {
+	transition: 0.5s;
+	opacity: 0.8;
+}
+
+.more{
+	background-size: 640px auto;
+	width: 100%;
+	height: 60px;
+	position: relative;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: scroll;
+}
+
+.soccer{
+	background-size: 640px auto;
+	width: 100%;
+	height: 275px;
+	position: relative;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: scroll;
+}
+
+.information{
+	background-size: 640px auto;
+	width: 100%;
+	height: 175px;
+	position: relative;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: scroll;
+}
+
+.information2{
+	background-size: 640px auto;
+	width: 100%;
+	height: 545px;
+	position: relative;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: scroll;
+}
+
+.end{
+	background-size: 640px auto;
+	width: 100%;
+	height: 900px;
+	position: relative;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: scroll;
+}
+
+@media (max-width: 639px) {
+	.main_ticket {
+		background-size:375px auto;
+		height:825px;
+	}
+
+	.notice {
+		background-size:375px auto;
+		height:330px;
+	}
+
+	.photo_booth {
+		background-size: 375px auto;
+		height:35px;
+	}
+
+	.photo_grid{
+		background-size: 375px auto;
+		height: 380px;
+	}
+
+	.column {
+		object-fit: cover;
+		width: 114px;
+		height: 114px;
+	}
+	
+	.more{
+		background-size: 375px auto;
+		height: 35px;
+	}
+
+	.soccer{
+		background-size: 375px auto;
+		height: 160px;
+	}
+
+	.information{
+		background-size: 375px auto;
+		height: 100px;
+	}
+
+	.information2{
+		background-size: 375px auto;
+		height: 320px;
+	}
+
+	.end{
+		background-size: 375px auto;
+		height: 535px;
+	}
+}
+
+@media (max-width: 320px) {
+	.main_ticket {
+		background-size:320px auto;
+		height:705px;
+	}
+
+	.notice {
+		background-size:320px auto;
+		height:285px;
+	}
+
+	.photo_booth {
+		background-size: 320px auto;
+		height:39px;
+	}
+	
+	.photo_grid{
+		background-size: 320px auto;
+		height: 290px;
+	}
+
+	.column {
+		object-fit: cover;
+		width: 95px;
+		height: 95px;
+	}
+	
+	.more{
+		background-size: 320px auto;
+		height: 28px;
+	}
+
+	.soccer{
+		background-size: 320px auto;
+		height: 138px;
+	}
+
+	.information{
+		background-size: 320px auto;
+		height: 89px;
+	}
+
+	.information2{
+		background-size: 320px auto;
+		height: 274px;
+	}
+
+	.end{
+		background-size: 320px auto;
+		height: 458px;
+	}
+}
+
+@media (max-width: 280px) {
+	.main_ticket {
+		background-size:280px auto;
+		height:605px;
+	}
+
+	.notice {
+		background-size:280px auto;
+		height:248px;
+	}
+
+	.photo_booth {
+		background-size: 280px auto;
+		height:32px;
+	}
+	
+	.photo_grid{
+		background-size: 280px auto;
+		height: 270px;
+	}
+
+	.column {
+		object-fit: cover;
+		width: 87px;
+		height: 87px;
+	}
+	
+	.more{
+		background-size: 280px auto;
+		height: 20px;
+	}
+
+	.soccer{
+		background-size: 280px auto;
+		height: 120px;
+	}
+
+	.information{
+		background-size: 280px auto;
+		height: 78px;
+	}
+
+	.information2{
+		background-size: 280px auto;
+		height: 238px;
+	}
+
+	.end{
+		background-size: 280px auto;
+		height: 400px;
+	}
+}

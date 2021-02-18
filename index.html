@@ -10,18 +10,12 @@
     <meta property="og:image" content="https://devjhlee-git.github.io/photo/title.JPG">
     <title>이정현❤️전민아 결혼합니다</title>
 
-    <!-- Bootstrap CSS -->
-    <link href="lib/css/bootstrap.min.css" rel="stylesheet">
-    <link href="lib/css/bootstrap-theme.min.css" rel="stylesheet">
-    <!-- Theme CSS -->
-    <link href="css/style.css?ver=1.6" rel="stylesheet">
-    <!-- Color CSS -->
-    <link rel="stylesheet" href="css/testStyle.css" rel="stylesheet">
-
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&display=swap" rel="stylesheet">
-    
-    <link rel="stylesheet" href="lib/css/jquery-ui.css">
+    <link rel="stylesheet" href="lib/css/bootstrap.min.css">
+    <link rel="stylesheet" href="lib/css/bootstrap-theme.min.css">
+	<link rel="stylesheet" href="lib/css/style.css" >
+    <link rel="stylesheet" href="lib/photoswipe/photoswipe.css">
+	<link rel="stylesheet" href="lib/photoswipe/default-skin/default-skin.css">
+		
 </head>
 
 <body>
@@ -45,132 +39,172 @@
 	
 	<section class="photo_grid">
 		<div class="row">
-			<img src="photo/grid/1.jpg" onclick="openModal();currentSlide(1)" class="column cursor">
-			<img src="photo/grid/2.jpg" onclick="openModal();currentSlide(2)" class="column cursor">
-			<img src="photo/grid/3.jpg" onclick="openModal();currentSlide(3)" class="column cursor">
+			<img src="photo/grid/1.jpg" onclick="openPhotoSwipe()" class="column cursor">
+			<img src="photo/grid/2.jpg" onclick="openPhotoSwipe()" class="column cursor">
+			<img src="photo/grid/3.jpg" onclick="openPhotoSwipe()" class="column cursor">
 		</div>
 		<div class="row">
-			<img src="photo/grid/4.jpg" onclick="openModal();currentSlide(4)" class="column cursor">
-			<img src="photo/grid/5.jpg" onclick="openModal();currentSlide(5)" class="column cursor">
-			<img src="photo/grid/6.jpg" onclick="openModal();currentSlide(6)" class="column cursor">
+			<img src="photo/grid/4.jpg" onclick="openPhotoSwipe()" class="column cursor">
+			<img src="photo/grid/5.jpg" onclick="openPhotoSwipe()" class="column cursor">
+			<img src="photo/grid/6.jpg" onclick="openPhotoSwipe()" class="column cursor">
 		</div>
 		<div class="row">
-			<img src="photo/grid/7.jpg" onclick="openModal();currentSlide(7)" class="column cursor">
-			<img src="photo/grid/8.jpg" onclick="openModal();currentSlide(8)" class="column cursor">
-			<img src="photo/grid/9.jpg" onclick="openModal();currentSlide(9)" class="column cursor">
+			<img src="photo/grid/7.jpg" onclick="openPhotoSwipe()" class="column cursor">
+			<img src="photo/grid/8.jpg" onclick="openPhotoSwipe()" class="column cursor">
+			<img src="photo/grid/9.jpg" onclick="openPhotoSwipe()" class="column cursor">
 		</div>
-		
-		<div id="myModal" class="modal">
-			<span class="close cursor" onclick="closeModal()">&times;</span>
-			
-			<div class="modal-content">
-				<div class="mySlides">
-					<img src="photo/grid/1.jpg" style="width:50%">
+
+		<!-- Root element of PhotoSwipe. Must have class pswp. -->
+		<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+			<!-- Background of PhotoSwipe. 
+				 It's a separate element as animating opacity is faster than rgba(). -->
+			<div class="pswp__bg"></div>
+
+			<!-- Slides wrapper with overflow:hidden. -->
+			<div class="pswp__scroll-wrap">
+
+				<!-- Container that holds slides. 
+					PhotoSwipe keeps only 3 of them in the DOM to save memory.
+					Don't modify these 3 pswp__item elements, data is added later on. -->
+				<div class="pswp__container">
+					<div class="pswp__item"></div>
+					<div class="pswp__item"></div>
+					<div class="pswp__item"></div>
 				</div>
 
-				<div class="mySlides">
-					<img src="photo/grid/2.jpg" style="width:50%">
-				</div>
+				<!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+				<div class="pswp__ui pswp__ui--hidden">
 
-				<div class="mySlides">
-					<img src="photo/grid/3.jpg" style="width:50%">
-				</div>
-				
-				<div class="mySlides">
-					<img src="photo/grid/4.jpg" style="width:50%">
-				</div>
-				
-				<div class="mySlides">
-					<img src="photo/grid/5.jpg" style="width:50%">
-				</div>
-				
-				<div class="mySlides">
-					<img src="photo/grid/6.jpg" style="width:50%">
-				</div>
-				
-				<div class="mySlides">
-					<img src="photo/grid/7.jpg" style="width:50%">
-				</div>
-				
-				<div class="mySlides">
-					<img src="photo/grid/8.jpg" style="width:50%">
-				</div>
-				
-				<div class="mySlides">
-					<img src="photo/grid/9.jpg" style="width:50%">
-				</div>
+					<div class="pswp__top-bar">
 
-				<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-				<a class="next" onclick="plusSlides(1)">&#10095;</a>
+						<!--  Controls are self-explanatory. Order can be changed. -->
+						<div class="pswp__counter"></div>
+						<button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+						<!-- Preloader demo https://codepen.io/dimsemenov/pen/yyBWoR -->
+						<!-- element will get class pswp__preloader--active when preloader is running -->
+						<div class="pswp__preloader">
+							<div class="pswp__preloader__icn">
+							  <div class="pswp__preloader__cut">
+								<div class="pswp__preloader__donut"></div>
+							  </div>
+							</div>
+						</div>
+					</div>
+
+					<div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+						<div class="pswp__share-tooltip"></div> 
+					</div>
+
+					<button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+					</button>
+
+					<button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+					</button>
+
+					<div class="pswp__caption">
+						<div class="pswp__caption__center"></div>
+					</div>
+
+				</div>
 
 			</div>
+
 		</div>
+		
 	</section>
 	
-    <!-- JQuery -->
+	<section class="more" data-image="photo/mobile_04.jpg">
+    </section>
+	
+	<section class="soccer" data-image="photo/mobile_05.jpg">
+    </section>
+	
+	<section class="information" data-image="photo/mobile_06.jpg">
+    </section>
+	
+	<section class="information2" data-image="photo/mobile_07.jpg">
+    </section>
+	
+	<section class="end" data-image="photo/mobile_08.jpg">
+    </section>
+	
     <script src="lib/jquery.min.js"></script>
-    <!-- ColorBox JS -->
-    <script src="lib/jquery.colorbox-min.js"></script>
-     <!-- Bootstrap JS -->
     <script src="lib/bootstrap.min.js"></script>
-    <!-- ScrollR JS -->
     <script src="lib/skrollr.min.js"></script>
-    <!-- Theme JS -->
-    <script src="js/script.js"></script>
-	
-    <script>
-        function copyToClipboard(val) {
-            var t = document.createElement("textarea");
-            document.body.appendChild(t);
-            t.value = val;
-            t.select();
-            document.execCommand('copy');
-            document.body.removeChild(t);
-        }
-        $('#btn1').click(function() {
-            copyToClipboard('서울시 성동구 서울숲2길 32-14');
-            alert('복사되었습니다. 붙여넣기하여 사용하세요');
-        });
-		
-		function openModal() {
-			document.getElementById("myModal").style.display = "block";
-		}
-
-		function closeModal() {
-		  document.getElementById("myModal").style.display = "none";
-		}
-
-		var slideIndex = 1;
-		showSlides(slideIndex);
-
-		function plusSlides(n) {
-		  showSlides(slideIndex += n);
-		}
-
-		function currentSlide(n) {
-		  showSlides(slideIndex = n);
-		}
-
-		function showSlides(n) {
-		  var i;
-		  var slides = document.getElementsByClassName("mySlides");
-		  var dots = document.getElementsByClassName("demo");
-		  
-		  if (n > slides.length) {slideIndex = 1}
-		  if (n < 1) {slideIndex = slides.length}
-		  for (i = 0; i < slides.length; i++) {
-			  slides[i].style.display = "none";
-		  }
-		  for (i = 0; i < dots.length; i++) {
-			  dots[i].className = dots[i].className.replace(" active", "");
-		  }
-		  slides[slideIndex-1].style.display = "block";
-		  dots[slideIndex-1].className += " active";
-		}
-    </script>
-	
+	<script src="lib/script.js"></script>
+	<script src="lib/photoswipe/photoswipe.js"></script>
+    <script src="lib/photoswipe/photoswipe-ui-default.min.js"></script>
     <script src="lib/jquery-ui.min.js"></script>
 
+    <script>
+		var openPhotoSwipe = function() {
+			var pswpElement = document.querySelectorAll('.pswp')[0];
+
+			// build items array
+			var items = [
+				{
+					src: 'photo/grid/1.jpg',
+					w: 964,
+					h: 1024
+				},
+				{
+					src: 'photo/grid/2.jpg',
+					w: 964,
+					h: 1024
+				},
+				{
+					src: 'photo/grid/3.jpg',
+					w: 964,
+					h: 1024
+				},
+				{
+					src: 'photo/grid/4.jpg',
+					w: 964,
+					h: 1024
+				},
+				{
+					src: 'photo/grid/5.jpg',
+					w: 964,
+					h: 1024
+				},
+				{
+					src: 'photo/grid/6.jpg',
+					w: 964,
+					h: 1024
+				},
+				{
+					src: 'photo/grid/7.jpg',
+					w: 964,
+					h: 1024
+				},
+				{
+					src: 'photo/grid/8.jpg',
+					w: 964,
+					h: 1024
+				},
+				{
+					src: 'photo/grid/9.jpg',
+					w: 964,
+					h: 1024
+				}
+			];
+
+			// define options (if needed)
+			var options = {
+				// history & focus options are disabled on CodePen        
+				history: false,
+				focus: false,
+
+				showAnimationDuration: 100,
+				hideAnimationDuration: 100
+			};
+
+			var gallery = new PhotoSwipe( pswpElement, PhotoSwipeUI_Default, items, options);
+			gallery.init();
+		};
+    </script>
 </div>
 </body>
 </html>
