@@ -2,7 +2,7 @@ body {
   min-height: 100%;
   height: 100%;
   color: #000;
-  background-color: #FFFEFE;
+  background-color: #000000;
 }
 
 html {
@@ -47,7 +47,7 @@ section {
 .photo_booth{
   background-size: 640px auto;
   width: 100%;
-  height: 74px;
+  height: 300px;
   position: relative;
   background-repeat: no-repeat;
   background-position: center;
@@ -57,7 +57,7 @@ section {
 .photo_grid{
 	background-size: 640px auto;
 	width: 100%;
-	height: 640px;
+	height: 650px;
 	position: relative;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -90,10 +90,30 @@ section {
 	background-attachment: scroll;
 }
 
+.mid_image{
+	background-size: 640px auto;
+	width: 100%;
+	height: 1050px;
+	position: relative;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: scroll;
+}
+
 .soccer{
 	background-size: 640px auto;
 	width: 100%;
-	height: 275px;
+	height: 210px;
+	position: relative;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: scroll;
+}
+
+.photo_4{
+	background-size: 640px auto;
+	width: 100%;
+	height: 1080px;
 	position: relative;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -103,7 +123,7 @@ section {
 .information{
 	background-size: 640px auto;
 	width: 100%;
-	height: 175px;
+	height: 135px;
 	position: relative;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -133,7 +153,7 @@ section {
 @media (max-width: 639px) {
 	.main_ticket {
 		background-size:375px auto;
-		height:825px;
+		height:828px;
 	}
 
 	.notice {
@@ -143,12 +163,12 @@ section {
 
 	.photo_booth {
 		background-size: 375px auto;
-		height:35px;
+		height:175px;
 	}
 
 	.photo_grid{
 		background-size: 375px auto;
-		height: 380px;
+		height: 350px;
 	}
 
 	.column {
@@ -161,25 +181,36 @@ section {
 		background-size: 375px auto;
 		height: 35px;
 	}
+	
+	.mid_image{
+		background-size: 375px auto;
+		width: 100%;
+		height: 615px;
+	}
 
 	.soccer{
 		background-size: 375px auto;
-		height: 160px;
+		height: 128px;
+	}
+
+	.photo_4{
+		background-size: 375px auto;
+		height: 639px;
 	}
 
 	.information{
 		background-size: 375px auto;
-		height: 100px;
+		height: 80px;
 	}
 
 	.information2{
 		background-size: 375px auto;
-		height: 320px;
+		height: 330px;
 	}
 
 	.end{
 		background-size: 375px auto;
-		height: 535px;
+		height: 615px;
 	}
 }
 
@@ -196,7 +227,7 @@ section {
 
 	.photo_booth {
 		background-size: 320px auto;
-		height:39px;
+		height:148px;
 	}
 	
 	.photo_grid{
@@ -212,34 +243,44 @@ section {
 	
 	.more{
 		background-size: 320px auto;
-		height: 28px;
+		height: 30px;
+	}
+
+	.mid_image{
+		background-size: 320px auto;
+		height: 525px;
 	}
 
 	.soccer{
 		background-size: 320px auto;
-		height: 138px;
+		height: 110px;
+	}
+	
+	.photo_4{
+		background-size: 320px auto;
+		height: 545px;
 	}
 
 	.information{
 		background-size: 320px auto;
-		height: 89px;
+		height: 68px;
 	}
 
 	.information2{
 		background-size: 320px auto;
-		height: 274px;
+		height: 280px;
 	}
 
 	.end{
 		background-size: 320px auto;
-		height: 458px;
+		height: 525px;
 	}
 }
 
 @media (max-width: 280px) {
 	.main_ticket {
 		background-size:280px auto;
-		height:605px;
+		height:615px;
 	}
 
 	.notice {
@@ -249,7 +290,7 @@ section {
 
 	.photo_booth {
 		background-size: 280px auto;
-		height:32px;
+		height:130px;
 	}
 	
 	.photo_grid{
@@ -267,24 +308,34 @@ section {
 		background-size: 280px auto;
 		height: 20px;
 	}
+	
+	.mid_image{
+		background-size: 280px auto;
+		height: 460px;
+	}
 
 	.soccer{
 		background-size: 280px auto;
-		height: 120px;
+		height: 95px;
+	}
+	
+	.photo_4{
+		background-size: 320px auto;
+		height: 540px;
 	}
 
 	.information{
 		background-size: 280px auto;
-		height: 78px;
+		height: 60px;
 	}
 
 	.information2{
 		background-size: 280px auto;
-		height: 238px;
+		height: 245px;
 	}
 
 	.end{
 		background-size: 280px auto;
-		height: 400px;
+		height: 460px;
 	}
 }
