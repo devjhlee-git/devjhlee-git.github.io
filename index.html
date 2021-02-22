@@ -6,7 +6,7 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://devjhlee-git.github.io">
     <meta property="og:title" content="전민아 & 이정현의 모바일 청접장 🕊">
-    <meta property="og:description" content="2021년 4월 3일 (토) 12시\n라마다프라자수원">
+    <meta property="og:description" content="2021년 4월 3일(토) 12시 라마다프라자수원">
     <meta property="og:image" content="https://devjhlee-git.github.io/photo/metatag_image.jpg">
     <title>이정현❤️전민아 결혼합니다</title>
 
@@ -51,8 +51,12 @@
 							<img src="photo/mobile_popup_button_groom.jpg" class="contact_popup_groom">
 						</a>
 						
-						<a href="javascript:void(0);" onclick="copyAccountNumber()">
-							<img src="photo/mobile_popup_button_account_number.jpg" class="contact_popup_account_number">
+						<a href="javascript:void(0);" onclick="copyBrideAccount()">
+							<img src="photo/mobile_popup_button_bride_account.jpg" class="contact_popup_bride_account">
+						</a>
+						
+						<a href="javascript:void(0);" onclick="copyGroomAccount()">
+							<img src="photo/mobile_popup_button_groom_account.jpg" class="contact_popup_groom_account">
 						</a>
 					</section>
 					
@@ -530,20 +534,32 @@
         }
 		<!-- Modal end -->
 		
+		var hiddenStatus = true;
 		function showSoccerImage() {
 			var hiddenImage = document.getElementById("photo4_hidden");
-			hiddenImage.style.display = 'inline';
+
+			if (hiddenStatus) {
+				hiddenImage.style.display = 'inline';
+				hiddenStatus = false;
+			} else {
+				hiddenImage.style.display = 'none';
+				hiddenStatus = true;
+			}
 		}
-		
 		
 		function copyAddress() {
 			copyToClipboard("경기 수원시 팔달구 중부대로 150 라마다프라자수원");
             alert("주소가 복사되었습니다.");
 		}
 		
-		function copyAccountNumber() {
+		function copyBrideAccount() {
+			copyToClipboard("42891028966907");
+            alert("신부 계좌번호가 복사되었습니다.");
+		}
+		
+		function copyGroomAccount() {
 			copyToClipboard("9003217781906");
-            alert("계좌번호가 복사되었습니다.");
+            alert("신랑 계좌번호가 복사되었습니다.");
 		}
 		
 		function copyToClipboard(val) {
@@ -554,14 +570,6 @@
             document.execCommand('copy');
             document.body.removeChild(t);
         }
-		
-		function handleSaveClick() {
-			const image = "photo/mobile_01.jpg"
-			const link = document.createElement("a");
-			link.href = image;
-			link.download = "PaintJS";
-			link.click();
-		}
     </script>
 </div>
 </body>
