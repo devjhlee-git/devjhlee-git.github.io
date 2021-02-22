@@ -221,6 +221,18 @@ section {
 	background-attachment: scroll;
 }
 
+.information_map{
+	background-size: 640px auto;
+	margin-left: auto;
+	margin-right: auto;
+	width: 42%;
+	height: 400px;
+	position: relative;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: scroll;
+}
+
 .information2{
 	background-size: 640px auto;
 	width: 100%;
@@ -336,6 +348,14 @@ section {
 		background-size: 375px auto;
 		height: 80px;
 	}
+	
+	.information_map{
+		background-size: 375px auto;
+		margin-left: auto;
+		margin-right: auto;
+		width: 93%;
+		height: 230px;
+	}
 
 	.information2{
 		background-size: 375px auto;
@@ -422,6 +442,14 @@ section {
 		background-size: 320px auto;
 		height: 68px;
 	}
+	
+	.information_map{
+		background-size: 320px auto;
+		margin-left: auto;
+		margin-right: auto;
+		width: 89%;
+		height: 190px;
+	}
 
 	.information2{
 		background-size: 320px auto;
@@ -507,6 +535,14 @@ section {
 	.information{
 		background-size: 280px auto;
 		height: 60px;
+	}
+	
+	.information_map{
+		background-size: 280px auto;
+		margin-left: auto;
+		margin-right: auto;
+		width: 89%;
+		height: 150px;
 	}
 
 	.information2{
