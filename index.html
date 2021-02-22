@@ -10,6 +10,8 @@
     <meta property="og:image" content="https://devjhlee-git.github.io/photo/title.JPG">
     <title>이정현❤️전민아 결혼합니다</title>
 
+	<script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=62p503qrkk"></script>
+
 	<link rel="stylesheet" href="lib/css/bootstrap.css">
     <link rel="stylesheet" href="lib/css/bootstrap.min.css">
     <link rel="stylesheet" href="lib/css/bootstrap-theme.min.css">
@@ -245,6 +247,10 @@
 	
 	<section class="information" data-image="photo/mobile_07.jpg"></section>
 	
+	<section class="information_map">
+		<div id="map" style="width:100%;height:400px;"></div>
+	</section>
+	
 	<section class="information2" data-image="photo/mobile_08.jpg"></section>
 	
 	<section class="end" data-image="photo/mobile_09.jpg"></section>
@@ -258,7 +264,14 @@
     <script src="lib/photoswipe/photoswipe-ui-default.min.js"></script>
     <script src="lib/jquery-ui.min.js"></script>
 
-    <script>	
+    <script>
+		var mapOptions = {
+			center: new naver.maps.LatLng(37.3595704, 127.105399),
+			zoom: 15
+		};
+
+		var map = new naver.maps.Map('map', mapOptions);
+	
 		var initPhotoSwipeFromDOM = function(gallerySelector) {
 
 			// parse slide data (url, title, size ...) from DOM elements 
