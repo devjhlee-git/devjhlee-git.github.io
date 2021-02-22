@@ -1,0 +1,712 @@
+body {
+	min-height: 100%;
+	height: 100%;
+	color: #000;
+	background-color: #FFFEFE;
+}
+
+html {
+	min-height: 100%;
+	height: 100%
+}
+
+section {
+	width: 100%;
+	overflow: hidden;
+	text-align: center;
+	position: relative;
+	padding: 0
+}
+
+.modal {
+	margin-left: auto;
+	margin-right: auto;
+	display: none; /* Hidden by default */
+	position: fixed; /* Stay in place */
+	z-index: 1; /* Sit on top */
+	width: 100%;
+	height: 100%;
+	background-color: rgb(0,0,0,0); /* Fallback color */
+	background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+	margin-left: auto;
+	margin-right: auto;
+	width: 500px;
+	height: 500px;
+	border-radius: 20px !important; 
+	margin-top: 150px;
+}
+
+.close {
+	position:absolute;
+	z-index: 1;
+	top:5px;
+	right:7px;
+	color: black;
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+	color: white;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.my-gallery {
+	width: 576px;
+	height: 576px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.my-gallery img {
+	width: 100%;
+	height: auto;
+}
+
+.my-gallery figure {
+	display: block;
+	float: left;
+	margin: 0 2px 2px 0;
+	width: 190px;
+}
+
+.my-gallery figure a {
+	background-size:cover !important;
+	cursor:default;
+	display:block;
+}
+
+.my-gallery figure .img_frame {
+	width:100%;
+	vertical-align:top;
+}
+
+.carousel-indicators {
+	bottom:-50px;
+}
+
+.carousel-indicators li {
+	background-color: #999;
+	background-color: rgba(70, 70, 70, 0.25);
+	margin: 0px 3px !important
+}
+
+.carousel-indicators .active {
+	background-color: #444;
+	margin: 0px 3px !important
+}
+
+.page {
+	min-height: 100%;
+	position: relative;
+	height: 100%;
+}
+
+.main_ticket {
+	background-size: 640px auto;
+	width: 100%;
+	height: 1410px;
+	position: relative;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: scroll;
+}
+
+.contact_button {
+	width: 480px;
+	background-position: center;
+	position: relative;
+	top : 1200px
+}
+
+.contact_popup {
+	background-size: 640px auto;
+	width: 500px;
+	height: 500px;
+	position: relative;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: scroll;
+}
+
+.contact_popup_bride {
+	position: absolute;
+	z-index: 1;
+	width: 210px;
+	top: 335px;
+	left: 146px;
+}
+
+.contact_popup_groom {
+	position: absolute;
+	z-index: 1;
+	width: 210px;
+	top: 375px;
+	left: 146px;
+}
+
+.contact_popup_account_number {
+	position: absolute;
+	z-index: 1;
+	width: 234px;
+	top: 460px;
+	left: 178px;
+}
+
+.contact_popup_button {
+	position:absolute;
+	z-index: 1;
+	top:5px;
+	right:7px;
+}
+
+.notice {
+	background-size: 640px auto;
+	width: 100%;
+	height: 570px;
+	position: relative;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: scroll;
+}
+
+.photo_booth{
+	background-size: 640px auto;
+	width: 100%;
+	height: 300px;
+	position: relative;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: scroll;
+}
+
+.photo_grid{
+	background-size: 640px auto;
+	width: 100%;
+	height: 640px;
+	position: relative;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: scroll;
+}
+
+.mid_image{
+	background-size: 640px auto;
+	width: 100%;
+	height: 1050px;
+	position: relative;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: scroll;
+}
+
+.soccer{
+	background-size: 640px auto;
+	width: 100%;
+	height: 210px;
+	position: relative;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: scroll;
+}
+
+.soccer_button{
+	width: 40px;
+	background-position: center;
+	position: relative;
+	top : 10px
+}
+
+.photo_4{
+	background-size: 640px auto;
+	width: 100%;
+	height: 1080px;
+	background-repeat: no-repeat;
+	background-position: center;	
+}
+
+.photo_4_soccer{
+	background-size: 640px auto;
+	width: 100%;
+	height: 1080px;
+	display: none;
+	background-repeat: no-repeat;
+	background-position: center;	
+}
+
+.information{
+	background-size: 640px auto;
+	width: 100%;
+	height: 135px;
+	position: relative;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: scroll;
+}
+
+.address_copy_button {
+	width: 180px;
+	background-position: center;
+	position: relative;
+	top : 80px
+}
+
+.information_map{
+	background-size: 640px auto;
+	margin-left: auto;
+	margin-right: auto;
+	width: 570px;
+	height: 400px;
+	position: relative;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: scroll;
+}
+
+.information2{
+	background-size: 640px auto;
+	width: 100%;
+	height: 545px;
+	position: relative;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: scroll;
+}
+
+.end{
+	background-size: 640px auto;
+	width: 100%;
+	height: 1050px;
+	position: relative;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: scroll;
+}
+
+@media (max-width: 639px) {
+	.main_ticket {
+		background-size:375px auto;
+		height:828px;
+	}
+
+	.contact_button {
+		width: 282px;
+		background-position: center;
+		position: relative;
+		top : 704px
+	}
+	
+	.contact_popup {
+		width: 375px;
+		height: 375px;
+	}
+	
+	.contact_popup_bride {
+		position: absolute;
+		z-index: 1;
+		width: 156px;
+		top: 250px;
+		left: 110px
+	}
+
+	.contact_popup_groom {
+		position: absolute;
+		z-index: 1;
+		width: 156px;
+		top: 280px;
+		left: 110px
+	}
+	
+	.contact_popup_account_number {
+		position: absolute;
+		z-index: 1;
+		width: 175px;
+		top: 345.5px;
+		left: 134px;
+	}
+		
+	.modal-content {
+		margin-top: 15%;
+		width: 375px;
+		height: 375px;
+	}
+
+	.notice {
+		background-size:375px auto;
+		height:330px;
+	}
+
+	.photo_booth {
+		background-size: 375px auto;
+		height:175px;
+	}
+
+	.photo_grid{
+		background-size: 375px auto;
+		height: 375px;
+	}
+	
+	.carousel-indicators {
+		bottom:-40px;
+	}
+
+	.carousel-indicators li {
+	  background-color: #999;
+	  background-color: rgba(70, 70, 70, 0.25);
+	  margin: 0px 3px !important
+	}
+
+	.carousel-indicators .active {
+	  background-color: #444;
+	  margin: 0px 3px !important
+	}
+
+	.my-gallery {
+		width: 336px;
+		height: 336px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.my-gallery figure {
+		display: block;
+		float: left;
+		margin: 0 2px 2px 0;
+		width: 110px;
+	}
+		
+	.mid_image{
+		background-size: 375px auto;
+		width: 100%;
+		height: 615px;
+	}
+
+	.soccer{
+		background-size: 375px auto;
+		height: 128px;
+	}
+	
+	.soccer_button{
+		width: 23px;
+		background-position: center;
+		position: relative;
+		top : 5px
+	}
+
+	.photo_4{
+		background-size: 375px auto;
+		height: 639px;
+	}
+	
+	.photo_4_soccer{
+		background-size: 375px auto;
+		width: 100%;
+		height: 639px;
+		display: none;	
+	}
+
+	.information{
+		background-size: 375px auto;
+		height: 80px;
+	}
+	
+	.address_copy_button {
+		width: 93px;
+		background-position: center;
+		top : 45px
+	}
+	
+	.information_map{
+		background-size: 375px auto;
+		margin-left: auto;
+		margin-right: auto;
+		width: 336px;
+		height: 230px;
+	}
+
+	.information2{
+		background-size: 375px auto;
+		height: 330px;
+	}
+
+	.end{
+		background-size: 375px auto;
+		height: 615px;
+	}
+}
+
+@media (max-width: 320px) {
+	.main_ticket {
+		background-size:320px auto;
+		height:705px;
+	}
+	
+	.contact_button {
+		width: 240px;
+		background-position: center;
+		position: relative;
+		top : 600px;
+	}
+	
+	.contact_popup {
+		width: 320px;
+		height: 320px;
+	}
+
+	.contact_popup_bride {
+		position: absolute;
+		z-index: 1;
+		width: 134px;
+		top: 215px;
+		left: 93px
+	}
+
+	.contact_popup_groom {
+		position: absolute;
+		z-index: 1;
+		width: 134px;
+		top: 240px;
+		left: 93px
+	}
+	
+	.contact_popup_account_number {
+		position: absolute;
+		z-index: 1;
+		width: 149px;
+		top: 294px;
+		left: 114px;
+	}
+		
+	.modal-content {
+		margin-top: 100px;
+		width: 320px;
+		height: 320px;
+	}
+
+	.notice {
+		background-size:320px auto;
+		height:285px;
+	}
+
+	.photo_booth {
+		background-size: 320px auto;
+		height:148px;
+	}
+	
+	.photo_grid{
+		background-size: 320px auto;
+		height: 320px;
+	}
+
+	.carousel-indicators {
+		bottom:-40px;
+	}
+
+	.carousel-indicators li {
+	  background-color: #999;
+	  background-color: rgba(70, 70, 70, 0.25);
+	  margin: 0px 3px !important
+	}
+
+	.carousel-indicators .active {
+	  background-color: #444;
+	  margin: 0px 3px !important
+	}
+
+	.my-gallery {
+		width: 286.5px;
+		height: 285px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.my-gallery figure {
+		display: block;
+		float: left;
+		margin: 0 1.5px 1.5px 0;
+		width: 94px;
+	}
+	
+	.mid_image{
+		background-size: 320px auto;
+		height: 525px;
+	}
+
+	.soccer{
+		background-size: 320px auto;
+		height: 110px;
+	}
+	
+	.photo_4{
+		background-size: 320px auto;
+		height: 545px;
+	}
+
+	.information{
+		background-size: 320px auto;
+		height: 68px;
+	}
+	
+	.address_copy_button {
+		width: 80px;
+		background-position: center;
+		position: relative;
+		top : 37px
+	}
+	
+	.information_map{
+		background-size: 320px auto;
+		margin-left: auto;
+		margin-right: auto;
+		width: 286px;
+		height: 190px;
+	}
+
+	.information2{
+		background-size: 320px auto;
+		height: 280px;
+	}
+
+	.end{
+		background-size: 320px auto;
+		height: 525px;
+	}
+}
+
+@media (max-width: 280px) {
+	.main_ticket {
+		background-size:280px auto;
+		height:615px;
+	}
+
+	.contact_button {
+		width: 211px;
+		background-position: center;
+		position: relative;
+		top : 524px;
+	}
+	
+	.contact_popup {
+		width: 280px;
+		height: 280px;
+	}
+	
+	.contact_popup_bride {
+		position: absolute;
+		z-index: 1;
+		width: 118px;
+		top: 187px;
+		left: 81px
+	}
+
+	.contact_popup_account_number {
+		position: absolute;
+		z-index: 1;
+		width: 130.5px;
+		top: 257px;
+		left: 100px;
+	}
+
+	.contact_popup_groom {
+		position: absolute;
+		z-index: 1;
+		width: 118px;
+		top: 210px;
+		left: 81px
+	}
+	
+	.modal-content {
+		margin-top: 120px;
+		width: 280px;
+		height: 280px;
+	}
+
+	.notice {
+		background-size:280px auto;
+		height:248px;
+	}
+
+	.photo_booth {
+		background-size: 280px auto;
+		height:130px;
+	}
+	
+	.photo_grid{
+		background-size: 280px auto;
+		height: 280px;
+	}
+	
+	.carousel-indicators {
+		bottom:-35px;
+	}
+
+	.carousel-indicators li {
+	  background-color: #999;
+	  background-color: rgba(70, 70, 70, 0.25);
+	  margin: 0px 3px !important
+	}
+
+	.carousel-indicators .active {
+	  background-color: #444;
+	  margin: 0px 3px !important
+	}
+	
+	.my-gallery {
+		width: 246px;
+		height: 246px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.my-gallery figure {
+		display: block;
+		float: left;
+		margin: 0 2px 2px 0;
+		width: 80px;
+	}
+	
+	.mid_image{
+		background-size: 280px auto;
+		height: 460px;
+	}
+
+	.soccer{
+		background-size: 280px auto;
+		height: 95px;
+	}
+	
+	.photo_4{
+		background-size: 280px auto;
+		height: 540px;
+	}
+
+	.information{
+		background-size: 280px auto;
+		height: 60px;
+	}
+	
+	.information_map{
+		background-size: 280px auto;
+		margin-left: auto;
+		margin-right: auto;
+		width: 89%;
+		height: 10px;
+	}
+
+	.information2{
+		background-size: 280px auto;
+		height: 245px;
+	}
+
+	.end{
+		background-size: 280px auto;
+		height: 460px;
+	}
+}
