@@ -141,7 +141,7 @@ section {
 	z-index: 1;
 	width: 210px;
 	top: 335px;
-	left: 146px
+	left: 146px;
 }
 
 .contact_popup_groom {
@@ -149,7 +149,15 @@ section {
 	z-index: 1;
 	width: 210px;
 	top: 375px;
-	left: 146px
+	left: 146px;
+}
+
+.contact_popup_account_number {
+	position: absolute;
+	z-index: 1;
+	width: 234px;
+	top: 460px;
+	left: 178px;
 }
 
 .contact_popup_button {

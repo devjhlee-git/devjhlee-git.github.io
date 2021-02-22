@@ -32,7 +32,9 @@
     
     <section class="main_ticket" data-image="photo/mobile_01.jpg">
 		
-		<img id="contact_button" src="photo/mobile_01_contact_button.jpg" class="contact_button">	
+		<a href="javascript:void(0);" onclick="showContactsModal()">
+			<img src="photo/mobile_01_contact_button.jpg" class="contact_button">	
+		</a>
 		
 		<div id="contact_popup" class="modal">
 			<div class="modal-content">
@@ -46,7 +48,11 @@
 					</a>
 					
 					<a href="sms:010-6691-1185">
-						<img id="contact_groom" src="photo/mobile_popup_button_groom.jpg" class="contact_popup_groom">
+						<img src="photo/mobile_popup_button_groom.jpg" class="contact_popup_groom">
+					</a>
+					
+					<a href="javascript:void(0);" onclick="copyAccountNumber()">
+						<img src="photo/mobile_popup_button_account_number.jpg" class="contact_popup_account_number">
 					</a>
 				</section>
 				
@@ -247,7 +253,9 @@
 	<section class="mid_image" data-image="photo/mobile_04.jpg"></section>
 	
 	<section class="soccer" data-image="photo/mobile_05.jpg">
-		<img id="soccer_button" src="photo/mobile_05_button.jpg" class="soccer_button">
+		<a href="javascript:void(0);" onclick="showSoccerImage()">
+			<img src="photo/mobile_05_button.jpg" class="soccer_button">
+		</a>		
 	</section>
 	
 	<section id="photo4" class="photo_4" data-image="photo/mobile_06.jpg">
@@ -255,7 +263,9 @@
 	</section>
 	
 	<section class="information" data-image="photo/mobile_07.jpg">
-		<img id="address_copy_button" src="photo/mobile_07_copy_button.jpg" class="address_copy_button">
+		<a href="javascript:void(0);" onclick="copyAddress()">
+			<img src="photo/mobile_07_copy_button.jpg" class="address_copy_button">
+		</a>
 	</section>
 	
 	<section class="information_map">
@@ -498,12 +508,11 @@
 		
 		<!-- Modal -->
 		var modal = document.getElementById('contact_popup');
-        var button01 = document.getElementById("contact_button");
         var span = document.getElementsByClassName("close")[0];                                          
  
-        button01.onclick = function() {
-            modal.style.display = "block";
-        }
+        function showContactsModal() {
+			modal.style.display = "block";
+		}
  
         span.onclick = function() {
             modal.style.display = "none";
@@ -515,18 +524,22 @@
             }
         }
 		<!-- Modal end -->
-
-		var soccerButton = document.getElementById("soccer_button");
-		soccerButton.onclick = function() {
-            var hiddenImage = document.getElementById("photo4_hidden");
-			hiddenImage.style.display = 'inline';
-        }
 		
-		var addressCopyButton = document.getElementById("address_copy_button");
-		addressCopyButton.onclick = function() {
-            copyToClipboard("경기 수원시 팔달구 중부대로 150 라마다프라자수원");
-            alert("복사되었습니다. 붙여넣기하여 사용하세요");
-        }
+		function showSoccerImage() {
+			var hiddenImage = document.getElementById("photo4_hidden");
+			hiddenImage.style.display = 'inline';
+		}
+		
+		
+		function copyAddress() {
+			copyToClipboard("경기 수원시 팔달구 중부대로 150 라마다프라자수원");
+            alert("주소가 복사되었습니다.");
+		}
+		
+		function copyAccountNumber() {
+			copyToClipboard("9003217781906");
+            alert("계좌번호가 복사되었습니다.");
+		}
 		
 		function copyToClipboard(val) {
             var t = document.createElement("textarea");
