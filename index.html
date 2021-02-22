@@ -235,17 +235,19 @@
 		
 	</section>
 	
-	<!--
-	<section class="more" data-image="photo/mobile_03.jpg"></section>
-	-->
-	
 	<section class="mid_image" data-image="photo/mobile_04.jpg"></section>
 	
-	<section class="soccer" data-image="photo/mobile_05.jpg"></section>
+	<section class="soccer" data-image="photo/mobile_05.jpg">
+		<img id="soccer_button" src="photo/mobile_05_button.jpg" class="soccer_button">
+	</section>
 	
-	<section class="photo_4" data-image="photo/mobile_06.jpg"></section>
+	<section id="photo4" class="photo_4" data-image="photo/mobile_06.jpg">
+		<img id="photo4_hidden" src="photo/mobile_06_01.jpg" class="photo_4_soccer">
+	</section>
 	
-	<section class="information" data-image="photo/mobile_07.jpg"></section>
+	<section class="information" data-image="photo/mobile_07.jpg">
+		<img id="address_copy_button" src="photo/mobile_07_copy_button.jpg" class="address_copy_button">
+	</section>
 	
 	<section class="information_map">
 		<div id="map" style="width:100%;height:400px;"></div>
@@ -504,7 +506,26 @@
         }
 		<!-- Modal end -->
 		
+		var soccerButton = document.getElementById("soccer_button");
+		soccerButton.onclick = function() {
+            var hiddenImage = document.getElementById("photo4_hidden");
+			hiddenImage.style.display = 'inline';
+        }
 		
+		var addressCopyButton = document.getElementById("address_copy_button");
+		addressCopyButton.onclick = function() {
+            copyToClipboard("경기 수원시 팔달구 중부대로 150 라마다프라자수원");
+            alert("복사되었습니다. 붙여넣기하여 사용하세요");
+        }
+		
+		function copyToClipboard(val) {
+            var t = document.createElement("textarea");
+            document.body.appendChild(t);
+            t.value = val;
+            t.select();
+            document.execCommand('copy');
+            document.body.removeChild(t);
+        }
     </script>
 </div>
 </body>

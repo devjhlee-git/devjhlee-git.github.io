@@ -201,10 +201,26 @@ section {
 	background-attachment: scroll;
 }
 
+.soccer_button{
+	width: 3%;
+	background-position: center;
+	position: relative;
+	top : 10px
+}
+
 .photo_4{
 	background-size: 640px auto;
 	width: 100%;
 	height: 1080px;
+	background-repeat: no-repeat;
+	background-position: center;	
+}
+
+.photo_4_soccer{
+	background-size: 640px auto;
+	width: 42%;
+	height: 1080px;
+	display: none;
 	position: relative;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -219,6 +235,13 @@ section {
 	background-repeat: no-repeat;
 	background-position: center;
 	background-attachment: scroll;
+}
+
+.address_copy_button {
+	width: 12%;
+	background-position: center;
+	position: relative;
+	top : 80px
 }
 
 .information_map{
@@ -542,7 +565,7 @@ section {
 		margin-left: auto;
 		margin-right: auto;
 		width: 89%;
-		height: 150px;
+		height: 10px;
 	}
 
 	.information2{
