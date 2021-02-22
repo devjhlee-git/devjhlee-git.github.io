@@ -36,11 +36,20 @@
 		
 		<div id="contact_popup" class="modal">
 			<div class="modal-content">
-				<div> 
-					<span class="close">&times;</span> 
-				</div>
-			
-				<img src="photo/mobile_popup.png" class="contact_popup">	
+				
+				<section>
+					<div class="close">&times;</div> 
+					<img src="photo/mobile_popup.png" class="contact_popup">
+					
+					<a href="sms:010-3123-1233">
+						<img src="photo/mobile_popup_button_bride.jpg" class="contact_popup_bride">
+					</a>
+					
+					<a href="sms:010-6691-1185">
+						<img id="contact_groom" src="photo/mobile_popup_button_groom.jpg" class="contact_popup_groom">
+					</a>
+				</section>
+				
 			</div>
 		</div>
 	</section>
@@ -279,6 +288,7 @@
 		});
 		<!-- Naver Map -->
 	
+		<!-- Photo Swipe -->
 		var initPhotoSwipeFromDOM = function(gallerySelector) {
 
 			// parse slide data (url, title, size ...) from DOM elements 
@@ -484,7 +494,7 @@
 
 		// execute above function
 		initPhotoSwipeFromDOM('.my-gallery');
-		
+		<!-- Photo Swipe -->
 		
 		<!-- Modal -->
 		var modal = document.getElementById('contact_popup');
@@ -505,7 +515,7 @@
             }
         }
 		<!-- Modal end -->
-		
+
 		var soccerButton = document.getElementById("soccer_button");
 		soccerButton.onclick = function() {
             var hiddenImage = document.getElementById("photo4_hidden");

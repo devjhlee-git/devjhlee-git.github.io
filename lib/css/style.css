@@ -26,7 +26,7 @@ section {
 	z-index: 1; /* Sit on top */
 	width: 100%;
 	height: 100%;
-	background-color: rgb(0,0,0); /* Fallback color */
+	background-color: rgb(0,0,0,0); /* Fallback color */
 	background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
 
@@ -34,12 +34,18 @@ section {
 .modal-content {
 	margin-left: auto;
 	margin-right: auto;
-	width: 40%; /* Could be more or less, depending on screen size */
-	height: 55%;
+	width: 500px;
+	height: 500px;
+	border-radius: 20px !important; 
+	margin-top: 150px;
 }
 
 .close {
-	color: #aaa;
+	position:absolute;
+	z-index: 1;
+	top:5px;
+	right:7px;
+	color: black;
 	float: right;
 	font-size: 28px;
 	font-weight: bold;
@@ -47,7 +53,7 @@ section {
 
 .close:hover,
 .close:focus {
-	color: black;
+	color: white;
 	text-decoration: none;
 	cursor: pointer;
 }
@@ -83,56 +89,84 @@ section {
 }
 
 .carousel-indicators {
-  bottom:-50px;
+	bottom:-50px;
 }
 
 .carousel-indicators li {
-  background-color: #999;
-  background-color: rgba(70, 70, 70, 0.25);
-  margin: 0px 3px !important
+	background-color: #999;
+	background-color: rgba(70, 70, 70, 0.25);
+	margin: 0px 3px !important
 }
 
 .carousel-indicators .active {
-  background-color: #444;
-  margin: 0px 3px !important
+	background-color: #444;
+	margin: 0px 3px !important
 }
 
 .page {
-  min-height: 100%;
-  position: relative;
-  height: 100%;
+	min-height: 100%;
+	position: relative;
+	height: 100%;
 }
 
 .main_ticket {
-  background-size: 640px auto;
-  width: 100%;
-  height: 1410px;
-  position: relative;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-attachment: scroll;
+	background-size: 640px auto;
+	width: 100%;
+	height: 1410px;
+	position: relative;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: scroll;
 }
 
 .contact_button {
-	width: 35%;
+	width: 480px;
 	background-position: center;
 	position: relative;
 	top : 1200px
 }
 
 .contact_popup {
+	background-size: 640px auto;
 	width: 500px;
 	height: 500px;
+	position: relative;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: scroll;
+}
+
+.contact_popup_bride {
+	position: absolute;
+	z-index: 1;
+	width: 210px;
+	top: 335px;
+	left: 146px
+}
+
+.contact_popup_groom {
+	position: absolute;
+	z-index: 1;
+	width: 210px;
+	top: 375px;
+	left: 146px
+}
+
+.contact_popup_button {
+	position:absolute;
+	z-index: 1;
+	top:5px;
+	right:7px;
 }
 
 .notice {
-  background-size: 640px auto;
-  width: 100%;
-  height: 570px;
-  position: relative;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-attachment: scroll;
+	background-size: 640px auto;
+	width: 100%;
+	height: 570px;
+	position: relative;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: scroll;
 }
 
 .photo_booth{
@@ -149,32 +183,6 @@ section {
 	background-size: 640px auto;
 	width: 100%;
 	height: 640px;
-	position: relative;
-	background-repeat: no-repeat;
-	background-position: center;
-	background-attachment: scroll;
-}
-
-.row {
-	margin-top: 6px;
-}
-
-.column {
-	margin: -3px;
-	object-fit: cover;
-	width: 214px;
-	height: 214px;
-}
-
-.column:hover {
-	transition: 0.5s;
-	opacity: 0.8;
-}
-
-.more{
-	background-size: 640px auto;
-	width: 100%;
-	height: 60px;
 	position: relative;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -202,7 +210,7 @@ section {
 }
 
 .soccer_button{
-	width: 3%;
+	width: 40px;
 	background-position: center;
 	position: relative;
 	top : 10px
@@ -218,13 +226,11 @@ section {
 
 .photo_4_soccer{
 	background-size: 640px auto;
-	width: 42%;
+	width: 100%;
 	height: 1080px;
 	display: none;
-	position: relative;
 	background-repeat: no-repeat;
-	background-position: center;
-	background-attachment: scroll;
+	background-position: center;	
 }
 
 .information{
@@ -238,7 +244,7 @@ section {
 }
 
 .address_copy_button {
-	width: 12%;
+	width: 180px;
 	background-position: center;
 	position: relative;
 	top : 80px
@@ -248,7 +254,7 @@ section {
 	background-size: 640px auto;
 	margin-left: auto;
 	margin-right: auto;
-	width: 42%;
+	width: 570px;
 	height: 400px;
 	position: relative;
 	background-repeat: no-repeat;
@@ -283,7 +289,7 @@ section {
 	}
 
 	.contact_button {
-		width: 75%;
+		width: 282px;
 		background-position: center;
 		position: relative;
 		top : 704px
@@ -294,12 +300,26 @@ section {
 		height: 375px;
 	}
 	
+	.contact_popup_bride {
+		position: absolute;
+		z-index: 1;
+		width: 156px;
+		top: 250px;
+		left: 110px
+	}
+
+	.contact_popup_groom {
+		position: absolute;
+		z-index: 1;
+		width: 156px;
+		top: 280px;
+		left: 110px
+	}
+		
 	.modal-content {
-		margin-top: 150px;
-		margin-left: auto;
-		margin-right: auto;
-		width: 100%; /* Could be more or less, depending on screen size */
-		height: 50%;
+		margin-top: 15%;
+		width: 375px;
+		height: 375px;
 	}
 
 	.notice {
@@ -345,12 +365,7 @@ section {
 		margin: 0 2px 2px 0;
 		width: 110px;
 	}
-	
-	.more{
-		background-size: 375px auto;
-		height: 35px;
-	}
-	
+		
 	.mid_image{
 		background-size: 375px auto;
 		width: 100%;
@@ -361,10 +376,24 @@ section {
 		background-size: 375px auto;
 		height: 128px;
 	}
+	
+	.soccer_button{
+		width: 23px;
+		background-position: center;
+		position: relative;
+		top : 5px
+	}
 
 	.photo_4{
 		background-size: 375px auto;
 		height: 639px;
+	}
+	
+	.photo_4_soccer{
+		background-size: 375px auto;
+		width: 100%;
+		height: 639px;
+		display: none;	
 	}
 
 	.information{
@@ -372,11 +401,17 @@ section {
 		height: 80px;
 	}
 	
+	.address_copy_button {
+		width: 93px;
+		background-position: center;
+		top : 45px
+	}
+	
 	.information_map{
 		background-size: 375px auto;
 		margin-left: auto;
 		margin-right: auto;
-		width: 93%;
+		width: 336px;
 		height: 230px;
 	}
 
@@ -395,6 +430,40 @@ section {
 	.main_ticket {
 		background-size:320px auto;
 		height:705px;
+	}
+	
+	.contact_button {
+		width: 240px;
+		background-position: center;
+		position: relative;
+		top : 600px;
+	}
+	
+	.contact_popup {
+		width: 320px;
+		height: 320px;
+	}
+
+	.contact_popup_bride {
+		position: absolute;
+		z-index: 1;
+		width: 134px;
+		top: 215px;
+		left: 93px
+	}
+
+	.contact_popup_groom {
+		position: absolute;
+		z-index: 1;
+		width: 134px;
+		top: 240px;
+		left: 93px
+	}
+		
+	.modal-content {
+		margin-top: 100px;
+		width: 320px;
+		height: 320px;
 	}
 
 	.notice {
@@ -441,11 +510,6 @@ section {
 		width: 94px;
 	}
 	
-	.more{
-		background-size: 320px auto;
-		height: 30px;
-	}
-
 	.mid_image{
 		background-size: 320px auto;
 		height: 525px;
@@ -466,11 +530,18 @@ section {
 		height: 68px;
 	}
 	
+	.address_copy_button {
+		width: 80px;
+		background-position: center;
+		position: relative;
+		top : 37px
+	}
+	
 	.information_map{
 		background-size: 320px auto;
 		margin-left: auto;
 		margin-right: auto;
-		width: 89%;
+		width: 286px;
 		height: 190px;
 	}
 
@@ -489,6 +560,40 @@ section {
 	.main_ticket {
 		background-size:280px auto;
 		height:615px;
+	}
+
+	.contact_button {
+		width: 211px;
+		background-position: center;
+		position: relative;
+		top : 524px;
+	}
+	
+	.contact_popup {
+		width: 280px;
+		height: 280px;
+	}
+	
+	.contact_popup_bride {
+		position: absolute;
+		z-index: 1;
+		width: 118px;
+		top: 187px;
+		left: 81px
+	}
+
+	.contact_popup_groom {
+		position: absolute;
+		z-index: 1;
+		width: 118px;
+		top: 210px;
+		left: 81px
+	}
+	
+	.modal-content {
+		margin-top: 120px;
+		width: 280px;
+		height: 280px;
 	}
 
 	.notice {
@@ -534,11 +639,6 @@ section {
 		margin: 0 2px 2px 0;
 		width: 80px;
 	}
-
-	.more{
-		background-size: 280px auto;
-		height: 20px;
-	}
 	
 	.mid_image{
 		background-size: 280px auto;
@@ -551,7 +651,7 @@ section {
 	}
 	
 	.photo_4{
-		background-size: 320px auto;
+		background-size: 280px auto;
 		height: 540px;
 	}
 
