@@ -18,6 +18,40 @@ section {
 	padding: 0
 }
 
+.modal {
+	margin-left: auto;
+	margin-right: auto;
+	display: none; /* Hidden by default */
+	position: fixed; /* Stay in place */
+	z-index: 1; /* Sit on top */
+	width: 100%;
+	height: 100%;
+	background-color: rgb(0,0,0); /* Fallback color */
+	background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+	margin-left: auto;
+	margin-right: auto;
+	width: 40%; /* Could be more or less, depending on screen size */
+	height: 55%;
+}
+
+.close {
+	color: #aaa;
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+	color: black;
+	text-decoration: none;
+	cursor: pointer;
+}
+
 .my-gallery {
 	width: 576px;
 	height: 576px;
@@ -48,6 +82,21 @@ section {
 	vertical-align:top;
 }
 
+.carousel-indicators {
+  bottom:-50px;
+}
+
+.carousel-indicators li {
+  background-color: #999;
+  background-color: rgba(70, 70, 70, 0.25);
+  margin: 0px 3px !important
+}
+
+.carousel-indicators .active {
+  background-color: #444;
+  margin: 0px 3px !important
+}
+
 .page {
   min-height: 100%;
   position: relative;
@@ -62,6 +111,18 @@ section {
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: scroll;
+}
+
+.contact_button {
+	width: 35%;
+	background-position: center;
+	position: relative;
+	top : 1200px
+}
+
+.contact_popup {
+	width: 500px;
+	height: 500px;
 }
 
 .notice {
@@ -186,6 +247,26 @@ section {
 		height:828px;
 	}
 
+	.contact_button {
+		width: 75%;
+		background-position: center;
+		position: relative;
+		top : 704px
+	}
+	
+	.contact_popup {
+		width: 375px;
+		height: 375px;
+	}
+	
+	.modal-content {
+		margin-top: 150px;
+		margin-left: auto;
+		margin-right: auto;
+		width: 100%; /* Could be more or less, depending on screen size */
+		height: 50%;
+	}
+
 	.notice {
 		background-size:375px auto;
 		height:330px;
@@ -198,7 +279,22 @@ section {
 
 	.photo_grid{
 		background-size: 375px auto;
-		height: 350px;
+		height: 375px;
+	}
+	
+	.carousel-indicators {
+		bottom:-40px;
+	}
+
+	.carousel-indicators li {
+	  background-color: #999;
+	  background-color: rgba(70, 70, 70, 0.25);
+	  margin: 0px 3px !important
+	}
+
+	.carousel-indicators .active {
+	  background-color: #444;
+	  margin: 0px 3px !important
 	}
 
 	.my-gallery {
@@ -270,7 +366,22 @@ section {
 	
 	.photo_grid{
 		background-size: 320px auto;
-		height: 291px;
+		height: 320px;
+	}
+
+	.carousel-indicators {
+		bottom:-40px;
+	}
+
+	.carousel-indicators li {
+	  background-color: #999;
+	  background-color: rgba(70, 70, 70, 0.25);
+	  margin: 0px 3px !important
+	}
+
+	.carousel-indicators .active {
+	  background-color: #444;
+	  margin: 0px 3px !important
 	}
 
 	.my-gallery {
@@ -342,6 +453,21 @@ section {
 	.photo_grid{
 		background-size: 280px auto;
 		height: 280px;
+	}
+	
+	.carousel-indicators {
+		bottom:-35px;
+	}
+
+	.carousel-indicators li {
+	  background-color: #999;
+	  background-color: rgba(70, 70, 70, 0.25);
+	  margin: 0px 3px !important
+	}
+
+	.carousel-indicators .active {
+	  background-color: #444;
+	  margin: 0px 3px !important
 	}
 	
 	.my-gallery {
