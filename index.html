@@ -305,6 +305,12 @@
 			position: new naver.maps.LatLng(37.27784530713695, 127.03236625843981),
 			map: map
 		});
+		
+		naver.maps.Event.addListener(marker, 'click', function(e) {
+		alert("주소가 복사되었습니다.");
+
+		})];
+		
 		<!-- Naver Map -->
 	
 		<!-- Photo Swipe -->
