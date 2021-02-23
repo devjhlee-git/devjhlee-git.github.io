@@ -144,42 +144,42 @@ section {
 	background-attachment: scroll;
 }
 
-.contact_popup_bride {
+.contact_popup_first {
 	position: absolute;
 	z-index: 1;
-	width: 228.5px;
-	top: 154px;
-	left: 230px;
+	width: 33px;
+	top: 110px;
+	right: 113px;
 }
 
-.contact_popup_groom {
+.contact_popup_second {
 	position: absolute;
 	z-index: 1;
-	width: 228.5px;
-	top: 196px;
-	left: 230px;
+	width: 33px;
+	top: 265.5px;
+	right: 113px;
 }
 
-.contact_popup_bride_account {
+.contact_popup_first_account {
 	position: absolute;
 	z-index: 1;
-	width: 412px;
-	top: 372px;
-	left: 44px;
+	width: 235px;
+	top: 157px;
+	right: 111.5px;
 }
 
-.contact_popup_groom_account {
+.contact_popup_second_account {
 	position: absolute;
 	z-index: 1;
-	width: 412px;
-	top: 399px;
-	left: 44px;
+	width: 235px;
+	top: 315px;
+	right: 111.5px;
 }
 
 .notice {
 	background-size: 640px auto;
 	width: 100%;
-	height: 570px;
+	height: 592px;
 	position: relative;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -332,41 +332,41 @@ section {
 		height: 301px;
 	}
 	
-	.contact_popup_bride {
+	.contact_popup_first {
 		position: absolute;
 		z-index: 1;
-		width: 154px;
-		top: 103px;
-		left: 155px;
+		width: 22px;
+		top: 73px;
+		right: 75px;
 	}
 
-	.contact_popup_groom {
+	.contact_popup_second {
 		position: absolute;
 		z-index: 1;
-		width: 154px;
-		top: 132px;
-		left: 155px;
+		width: 22px;
+		top: 179px;
+		right: 75px;
 	}
 	
-	.contact_popup_bride_account {
+	.contact_popup_first_account {
 		position: absolute;
 		z-index: 1;
-		width: 276px;
-		top: 251px;
-		left: 30px;
+		width: 157px;
+		top: 106px;
+		right: 75px;
 	}
 
-	.contact_popup_groom_account {
+	.contact_popup_second_account {
 		position: absolute;
 		z-index: 1;
-		width: 276px;
-		top: 268px;
-		left: 30px;
+		width: 157px;
+		top: 212px;
+		right: 75px;
 	}
 
 	.notice {
 		background-size:375px auto;
-		height:330px;
+		height:347px;
 	}
 
 	.photo_booth {
@@ -437,7 +437,7 @@ section {
 	
 	.photo_4_soccer{
 		background-size: 375px auto;
-		width: 100%;
+		width: 375px;
 		height: 677px;
 		display: none;
 	}
@@ -503,41 +503,41 @@ section {
 		height: 287px;
 	}
 
-	.contact_popup_bride {
+	.contact_popup_first {
 		position: absolute;
 		z-index: 1;
-		width: 146px;
-		top: 98px;
-		left: 147px;
+		width: 21px;
+		top: 70px;
+		right: 71px;
 	}
 
-	.contact_popup_groom {
+	.contact_popup_second {
 		position: absolute;
 		z-index: 1;
-		width: 146px;
-		top: 125px;
-		left: 147px;
+		width: 21px;
+		top: 170px;
+		right: 71px;
 	}
 	
-	.contact_popup_bride_account {
+	.contact_popup_first_account {
 		position: absolute;
 		z-index: 1;
-		width: 264px;
-		top: 238px;
-		left: 28px;
+		width: 150px;
+		top: 101px;
+		right: 71.5px;
 	}
 
-	.contact_popup_groom_account {
+	.contact_popup_second_account {
 		position: absolute;
 		z-index: 1;
-		width: 264px;
-		top: 254px;
-		left: 28px;
+		width: 150px;
+		top: 202px;
+		right: 71.5px;
 	}
 		
 	.notice {
 		background-size:320px auto;
-		height:285px;
+		height:295px;
 	}
 
 	.photo_booth {
@@ -670,41 +670,41 @@ section {
 		height: 251px;
 	}
 	
-	.contact_popup_bride {
+	.contact_popup_first {
 		position: absolute;
 		z-index: 1;
-		width: 128.5px;
-		top: 86px;
-		left: 129px;
+		width: 19px;
+		top: 61px;
+		right: 62px;
 	}
 
-	.contact_popup_groom {
+	.contact_popup_second {
 		position: absolute;
 		z-index: 1;
-		width: 128.6px;
-		top: 110px;
-		left: 129px;
+		width: 19px;
+		top: 149px;
+		right: 62px;
 	}
 	
-	.contact_popup_bride_account {
+	.contact_popup_first_account {
 		position: absolute;
 		z-index: 1;
-		width: 231px;
-		top: 209px;
-		left: 24.5px;
+		width: 131px;
+		top: 88px;
+		right: 62.5px;
 	}
 
-	.contact_popup_groom_account {
+	.contact_popup_second_account {
 		position: absolute;
 		z-index: 1;
-		width: 231px;
-		top: 222px;
-		left: 24.5px;
+		width: 131px;
+		top: 177px;
+		right: 62.5px;
 	}
 
 	.notice {
 		background-size:280px auto;
-		height:248px;
+		height:260px;
 	}
 
 	.photo_booth {

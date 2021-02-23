@@ -32,33 +32,32 @@
     <section class="main_ticket" data-image="photo/mobile_01.jpg">
 		<div>
 			<a href="javascript:void(0);" onclick="showContactsModal()">
-				<img src="photo/mobile_01_contact_button.jpg" class="contact_button">	
+				<img id="contact" src="photo/mobile_01_contact_button.jpg" class="contact_button">
+				<img id="contact_parent" style="display:none" src="photo/mobile_01_parent_contact_button.jpg" class="contact_button">
 			</a>
 			
 			<div id="contact_popup" class="modal">
-				<div class="modal-content">
-					
+				<div class="modal-content" >
 					<section>
 						<div class="close">&times;</div> 
 						<img src="photo/mobile_popup.png" class="contact_popup">
 						
 						<a href="sms:010-3123-1233">
-							<img src="photo/mobile_popup_button_bride.jpg" class="contact_popup_bride">
+							<img src="photo/mobile_popup_message.png" class="contact_popup_first">
 						</a>
 						
 						<a href="sms:010-6691-1185">
-							<img src="photo/mobile_popup_button_groom.jpg" class="contact_popup_groom">
+							<img src="photo/mobile_popup_message.png" class="contact_popup_second">
 						</a>
 						
 						<a href="javascript:void(0);" onclick="copyBrideAccount()">
-							<img src="photo/mobile_popup_button_bride_account.jpg" class="contact_popup_bride_account">
+							<img src="photo/mobile_popup_button_bride_account.png" class="contact_popup_first_account">
 						</a>
 						
 						<a href="javascript:void(0);" onclick="copyGroomAccount()">
-							<img src="photo/mobile_popup_button_groom_account.jpg" class="contact_popup_groom_account">
+							<img src="photo/mobile_popup_button_groom_account.png" class="contact_popup_second_account">
 						</a>
 					</section>
-					
 				</div>
 			</div>
 		</div>
@@ -67,8 +66,10 @@
 			<img src="photo/mobile_01_calendar_button.jpg" class="calendar_button">	
 		</div>
 	</section>
-			
-	<section class="photo_booth" data-image="photo/mobile_02.jpg"></section>
+	
+	<section class="notice" data-image="photo/mobile_02.jpg"></section>
+	
+	<section class="photo_booth" data-image="photo/mobile_03.jpg"></section>
 		
 	<section class="photo_grid">
 		<div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -293,15 +294,22 @@
     <script src="lib/photoswipe/photoswipe-ui-default.min.js"></script>
     <script src="lib/jquery-ui.min.js"></script>
 
-    <script>	
+    <script>
 		(function() {
 			var urlParams = new URLSearchParams(window.location.search);
 			var metaTitle = "전민아 & 이정현의 모바일 청접장 🕊"
 			
+			var contactButton = document.getElementById('contact');
+			var parentContactButton = document.getElementById('contact_parent');
+			
 			if (urlParams.has('jeonghyeon')) {
 				metaTitle = "우리 아들 결혼합니다.";
+				contactButton.style.display = "none";
+				parentContactButton.style.display = "inline";
 			} else if (urlParams.has('mina')) {
 				metaTitle = "우리 딸 결혼합니다.";
+				contactButton.style.display = "none";
+				parentContactButton.style.display = "inline";
 			}
 			
 			$("meta[property='og\\:title']").attr("content", metaTitle);
