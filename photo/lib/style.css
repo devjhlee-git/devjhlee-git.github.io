@@ -1,0 +1,807 @@
+body {
+	min-height: 100%;
+	height: 100%;
+	color: #000;
+	background-color: #FDFDFD;
+}
+
+html {
+	min-height: 100%;
+	height: 100%
+}
+
+section {
+	width: 100%;
+	overflow: hidden;
+	text-align: center;
+	position: relative;
+	padding: 0
+}
+
+.modal {
+	margin-left: auto;
+	margin-right: auto;
+	display: none; /* Hidden by default */
+	position: fixed; /* Stay in place */
+	z-index: 1; /* Sit on top */
+	width: 100%;
+	height: 100%;
+	background-color: rgb(0,0,0,0); /* Fallback color */
+	background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+	margin-left: auto;
+	margin-right: auto;
+	width: 500px;
+	height: 448px;
+	border-radius: 20px !important; 
+	margin-top: 150px;
+	background-color: #F9F9F9;
+}
+
+.close {
+	position:absolute;
+	z-index: 1;
+	top: 10px;
+	right: 10px;
+	color: black;
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+	color: white;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.my-gallery {
+	width: 576px;
+	height: 576px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.my-gallery img {
+	width: 100%;
+	height: auto;
+}
+
+.my-gallery figure {
+	display: block;
+	float: left;
+	margin: 0 2px 2px 0;
+	width: 190px;
+}
+
+.my-gallery figure a {
+	background-size:cover !important;
+	cursor:default;
+	display:block;
+}
+
+.my-gallery figure .img_frame {
+	width:100%;
+	vertical-align:top;
+}
+
+.carousel-indicators {
+	bottom:-50px;
+}
+
+.carousel-indicators li {
+	background-color: #999;
+	background-color: rgba(70, 70, 70, 0.25);
+	margin: 0px 3px !important
+}
+
+.carousel-indicators .active {
+	background-color: #444;
+	margin: 0px 3px !important
+}
+
+.page {
+	min-height: 100%;
+	position: relative;
+	height: 100%;
+}
+
+.main_ticket {
+	background-size: 640px auto;
+	width: 100%;
+	height: 1410px;
+	position: relative;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: scroll;
+}
+
+.contact_button {
+	width: 478px;
+	background-position: center;
+	position: relative;
+	top : 1200px
+}
+
+.calendar_button {
+	width: 478px;
+	background-position: center;
+	position: relative;
+	top : 1207px
+}
+
+.contact_popup {
+	background-size: 640px auto;
+	width: 500px;
+	height: 448px;
+	position: relative;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: scroll;
+}
+
+.contact_popup_first {
+	position: absolute;
+	z-index: 1;
+	width: 33px;
+	top: 110px;
+	right: 113px;
+}
+
+.contact_popup_second {
+	position: absolute;
+	z-index: 1;
+	width: 33px;
+	top: 265.5px;
+	right: 113px;
+}
+
+.contact_popup_first_account {
+	position: absolute;
+	z-index: 1;
+	width: 235px;
+	top: 157px;
+	right: 111.5px;
+}
+
+.contact_popup_second_account {
+	position: absolute;
+	z-index: 1;
+	width: 235px;
+	top: 315px;
+	right: 111.5px;
+}
+
+.notice {
+	background-size: 640px auto;
+	width: 100%;
+	height: 592px;
+	position: relative;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: scroll;
+}
+
+.photo_booth{
+	background-size: 640px auto;
+	width: 100%;
+	height: 300px;
+	position: relative;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: scroll;
+}
+
+.photo_grid{
+	background-size: 640px auto;
+	width: 100%;
+	height: 640px;
+	position: relative;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: scroll;
+}
+
+.mid_image{
+	background-size: 640px auto;
+	width: 100%;
+	height: 854px;
+	position: relative;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: scroll;
+}
+
+.soccer{
+	background-size: 640px auto;
+	width: 100%;
+	height: 374px;
+	position: relative;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: scroll;
+}
+
+.soccer_button{
+	width: 34px;
+	background-position: center;
+	position: relative;
+	top: 205px;
+	left: -1.5px
+}
+
+.photo_4{
+	background-size: 640px auto;
+	width: 100%;
+	height: 1155px;
+	background-repeat: no-repeat;
+	background-position: center;	
+}
+
+.photo_4_soccer{
+	background-size: 640px auto;
+	width: 640px;
+	height: 1155px;
+	display: none;
+	background-repeat: no-repeat;
+	background-position: center;	
+}
+
+.information{
+	background-size: 640px auto;
+	width: 100%;
+	height: 160px;
+	position: relative;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: scroll;
+}
+
+.address_copy_button {
+	width: 640px;
+	background-position: center;
+	position: relative;
+	top : 46px;
+}
+
+.information_map{
+	background-size: 640px auto;
+	margin-left: auto;
+	margin-right: auto;
+	width: 570px;
+	height: 400px;
+	position: relative;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: scroll;
+}
+
+.information2{
+	background-size: 640px auto;
+	width: 100%;
+	height: 560px;
+	position: relative;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: scroll;
+}
+
+.end{
+	background-size: 640px auto;
+	width: 100%;
+	height: 1077px;
+	position: relative;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: scroll;
+}
+
+@media (max-width: 639px) {
+	.main_ticket {
+		background-size:375px auto;
+		height:828px;
+	}
+
+	.contact_button {
+		width: 282px;
+		background-position: center;
+		position: relative;
+		top : 704px
+	}
+	
+	.calendar_button {
+		width: 282px;
+		background-position: center;
+		position: relative;
+		top : 708px
+	}
+	
+		
+	.modal-content {
+		margin-top: 30%;
+		width: 336px;
+		height: 301px;
+	}
+	
+	.contact_popup {
+		width: 336px;
+		height: 301px;
+	}
+	
+	.contact_popup_first {
+		position: absolute;
+		z-index: 1;
+		width: 22px;
+		top: 73px;
+		right: 75px;
+	}
+
+	.contact_popup_second {
+		position: absolute;
+		z-index: 1;
+		width: 22px;
+		top: 179px;
+		right: 75px;
+	}
+	
+	.contact_popup_first_account {
+		position: absolute;
+		z-index: 1;
+		width: 157px;
+		top: 106px;
+		right: 75px;
+	}
+
+	.contact_popup_second_account {
+		position: absolute;
+		z-index: 1;
+		width: 157px;
+		top: 212px;
+		right: 75px;
+	}
+
+	.notice {
+		background-size:375px auto;
+		height:353px;
+	}
+
+	.photo_booth {
+		background-size: 375px auto;
+		height:175px;
+	}
+
+	.photo_grid{
+		background-size: 375px auto;
+		height: 375px;
+	}
+	
+	.carousel-indicators {
+		bottom:-35px;
+	}
+
+	.carousel-indicators li {
+		width: 6px;
+		height: 6px;
+		background-color: #999;
+		background-color: rgba(70, 70, 70, 0.25);
+		margin: 0px 3px !important
+	}
+
+	.carousel-indicators .active {
+		width: 6px;
+		height: 6px;
+		background-color: #444;
+		margin: 0px 3px !important
+	}
+
+	.my-gallery {
+		width: 336px;
+		height: 336px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.my-gallery figure {
+		display: block;
+		float: left;
+		margin: 0 2px 2px 0;
+		width: 110px;
+	}
+		
+	.mid_image{
+		background-size: 375px auto;
+		width: 100%;
+		height: 500px;
+	}
+
+	.soccer{
+		background-size: 375px auto;
+		height: 216px;
+	}
+	
+	.soccer_button{
+		width: 20.5px;
+		background-position: center;
+		position: relative;
+		top : 117.5px
+	}
+
+	.photo_4{
+		background-size: 375px auto;
+		height: 677px;
+	}
+	
+	.photo_4_soccer{
+		background-size: 375px auto;
+		width: 375px;
+		height: 677px;
+		display: none;
+	}
+
+	.information{
+		background-size: 375px auto;
+		height: 94px;
+	}
+	
+	.address_copy_button {
+		width: 375px;
+		background-position: center;
+		top : 27px;
+	}
+	
+	.information_map{
+		background-size: 375px auto;
+		margin-left: auto;
+		margin-right: auto;
+		width: 336px;
+		height: 230px;
+	}
+
+	.information2{
+		background-size: 375px auto;
+		height: 327px;
+	}
+
+	.end{
+		background-size: 375px auto;
+		height: 633px;
+	}
+}
+
+@media (max-width: 320px) {
+	.main_ticket {
+		background-size:320px auto;
+		height:705px;
+	}
+	
+	.contact_button {
+		width: 240px;
+		background-position: center;
+		position: relative;
+		top : 600px;
+	}
+	
+	.calendar_button {
+		width: 240px;
+		background-position: center;
+		position: relative;
+		top : 603px
+	}
+	
+	.modal-content {
+		margin-top: 30%;
+		width: 320px;
+		height: 287px;
+	}
+	
+	.contact_popup {
+		width: 320px;
+		height: 287px;
+	}
+
+	.contact_popup_first {
+		position: absolute;
+		z-index: 1;
+		width: 21px;
+		top: 70px;
+		right: 71px;
+	}
+
+	.contact_popup_second {
+		position: absolute;
+		z-index: 1;
+		width: 21px;
+		top: 170px;
+		right: 71px;
+	}
+	
+	.contact_popup_first_account {
+		position: absolute;
+		z-index: 1;
+		width: 150px;
+		top: 101px;
+		right: 71.5px;
+	}
+
+	.contact_popup_second_account {
+		position: absolute;
+		z-index: 1;
+		width: 150px;
+		top: 202px;
+		right: 71.5px;
+	}
+		
+	.notice {
+		background-size:320px auto;
+		height:300px;
+	}
+
+	.photo_booth {
+		background-size: 320px auto;
+		height:148px;
+	}
+	
+	.photo_grid{
+		background-size: 320px auto;
+		height: 320px;
+	}
+
+	.carousel-indicators {
+		bottom:-35px;
+	}
+
+	.carousel-indicators li {
+		width: 6px;
+		height: 6px;
+		background-color: #999;
+		background-color: rgba(70, 70, 70, 0.25);
+		margin: 0px 3px !important
+	}
+
+	.carousel-indicators .active {
+		width: 6px;
+		height: 6px;
+		background-color: #444;
+		margin: 0px 3px !important
+	}
+
+	.my-gallery {
+		width: 286.5px;
+		height: 285px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.my-gallery figure {
+		display: block;
+		float: left;
+		margin: 0 1.5px 1.5px 0;
+		width: 94px;
+	}
+	
+	.mid_image{
+		background-size: 320px auto;
+		height: 427px;
+	}
+
+	.soccer{
+		background-size: 320px auto;
+		height: 186px;
+	}
+	
+	.soccer_button{
+		width: 17.5px;
+		background-position: center;
+		position: relative;
+		top: 101px;
+	}
+	
+	.photo_4{
+		background-size: 320px auto;
+		height: 577px;
+	}
+	
+	.photo_4_soccer{
+		background-size: 320px auto;
+		height: 577px;
+	}
+
+	.information{
+		background-size: 320px auto;
+		height: 80px;
+	}
+	
+	.address_copy_button {
+		width: 320px;
+		top : 22px;
+	}
+	
+	.information_map{
+		background-size: 320px auto;
+		margin-left: auto;
+		margin-right: auto;
+		width: 286px;
+		height: 190px;
+	}
+
+	.information2{
+		background-size: 320px auto;
+		height: 279px;
+	}
+
+	.end{
+		background-size: 320px auto;
+		height: 537px;
+	}
+}
+
+@media (max-width: 280px) {
+	.main_ticket {
+		background-size:280px auto;
+		height:615px;
+	}
+
+	.contact_button {
+		width: 211px;
+		background-position: center;
+		position: relative;
+		top : 524px;
+	}
+	
+	.calendar_button {
+		width: 211px;
+		background-position: center;
+		position: relative;
+		top : 527px
+	}
+		
+	.modal-content {
+		margin-top: 30%;
+		width: 280px;
+		height: 251px;
+	}
+	
+	.contact_popup {
+		width: 280px;
+		height: 251px;
+	}
+	
+	.contact_popup_first {
+		position: absolute;
+		z-index: 1;
+		width: 19px;
+		top: 61px;
+		right: 62px;
+	}
+
+	.contact_popup_second {
+		position: absolute;
+		z-index: 1;
+		width: 19px;
+		top: 149px;
+		right: 62px;
+	}
+	
+	.contact_popup_first_account {
+		position: absolute;
+		z-index: 1;
+		width: 131px;
+		top: 88px;
+		right: 62.5px;
+	}
+
+	.contact_popup_second_account {
+		position: absolute;
+		z-index: 1;
+		width: 131px;
+		top: 177px;
+		right: 62.5px;
+	}
+
+	.notice {
+		background-size:280px auto;
+		height:263px;
+	}
+
+	.photo_booth {
+		background-size: 280px auto;
+		height:130px;
+	}
+	
+	.photo_grid{
+		background-size: 280px auto;
+		height: 280px;
+	}
+	
+	.carousel-indicators {
+		bottom:-30px;
+	}
+
+	.carousel-indicators li {
+		width: 6px;
+		height: 6px;
+		background-color: #999;
+		background-color: rgba(70, 70, 70, 0.25);
+		margin: 0px 3px !important
+	}
+
+	.carousel-indicators .active {
+		width: 6px;
+		height: 6px;
+		background-color: #444;
+		margin: 0px 3px !important
+	}
+	
+	.my-gallery {
+		width: 246px;
+		height: 246px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.my-gallery figure {
+		display: block;
+		float: left;
+		margin: 0 2px 2px 0;
+		width: 80px;
+	}
+	
+	.mid_image{
+		background-size: 280px auto;
+		height: 373px;
+	}
+
+	.soccer{
+		background-size: 280px auto;
+		height: 163px;
+	}
+	
+	.soccer_button{
+		width: 15px;
+		background-position: center;
+		position: relative;
+		top: 87px;
+	}
+	
+	.photo_4{
+		background-size: 280px auto;
+		height: 503px;
+	}
+
+	.photo_4_soccer{
+		background-size: 280px auto;
+		height: 503px;
+	}
+
+	.information{
+		background-size: 280px auto;
+		height: 69px;
+	}
+	
+	.address_copy_button {
+		width: 280px;
+		top : 20px;
+	}
+	
+	.information_map{
+		background-size: 280px auto;
+		margin-left: auto;
+		margin-right: auto;
+		width: 247px;
+		height: 150px;
+	}
+
+	.information2{
+		background-size: 280px auto;
+		height: 245px;
+	}
+
+	.end{
+		background-size: 280px auto;
+		height: 471px;
+	}
+}
