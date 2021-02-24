@@ -30,7 +30,6 @@ section {
 	background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
 
-/* Modal Content/Box */
 .modal-content {
 	margin-left: auto;
 	margin-right: auto;
@@ -39,6 +38,22 @@ section {
 	border-radius: 20px !important; 
 	margin-top: 150px;
 	background-color: #F9F9F9;
+}
+
+.modal_content_story {
+	margin-left: auto;
+	margin-right: auto;
+	width: 500px;
+	height: 608px;
+	margin-top: 150px;
+	background-color: #F9F9F9;
+}
+
+.story_image {
+	width: 500px;
+	height: 608px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .close {
@@ -50,6 +65,23 @@ section {
 	float: right;
 	font-size: 28px;
 	font-weight: bold;
+}
+
+.story_close {
+	position:absolute;
+	z-index: 1;
+	top: 1px;
+	right: 7px;
+	color: gray;
+	float: right;
+	font-size: 28px;
+}
+
+.story_close:hover,
+.story_close:focus {
+	color: black;
+	text-decoration: none;
+	cursor: pointer;
 }
 
 .close:hover,
@@ -127,7 +159,7 @@ section {
 	top : 1200px
 }
 
-.calendar_button {
+.story_button {
 	width: 478px;
 	background-position: center;
 	position: relative;
@@ -401,7 +433,7 @@ section {
 		top : 704px
 	}
 	
-	.calendar_button {
+	.story_button {
 		width: 282px;
 		background-position: center;
 		position: relative;
@@ -660,7 +692,7 @@ section {
 		top : 600px;
 	}
 	
-	.calendar_button {
+	.story_button {
 		width: 240px;
 		background-position: center;
 		position: relative;
@@ -915,7 +947,7 @@ section {
 		top : 524px;
 	}
 	
-	.calendar_button {
+	.story_button {
 		width: 211px;
 		background-position: center;
 		position: relative;
