@@ -1,737 +1,737 @@
 ﻿<!DOCTYPE html>
 <html>
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://devjhlee-git.github.io">
-    <meta property="og:description" content="2021년 4월 3일(토) 12시 라마다프라자수원">
-    <meta property="og:image" content="https://devjhlee-git.github.io/photo/metatag_image.jpg">
-    <title>이정현 & 전민아의 모바일 청접장 🕊</title>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta property="og:type" content="website">
+		<meta property="og:url" content="https://devjhlee-git.github.io">
+		<meta property="og:description" content="2021년 4월 3일(토) 12시 라마다프라자수원">
+		<meta property="og:image" content="https://devjhlee-git.github.io/photo/metatag_image.jpg">
+		<title>이정현 & 전민아의 모바일 청접장 🕊</title>
 
-	<script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=62p503qrkk"></script>
+		<script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=62p503qrkk"></script>
 
-	<link rel="stylesheet" href="lib/css/bootstrap.css">
-    <link rel="stylesheet" href="lib/css/bootstrap.min.css">
-    <link rel="stylesheet" href="lib/css/bootstrap-theme.min.css">
-	<link rel="stylesheet" href="lib/css/style.css" >
-    <link rel="stylesheet" href="lib/photoswipe/photoswipe.css">
-	<link rel="stylesheet" href="lib/photoswipe/default-skin/default-skin.css">
-</head>
+		<link rel="stylesheet" href="lib/css/bootstrap.css">
+		<link rel="stylesheet" href="lib/css/bootstrap.min.css">
+		<link rel="stylesheet" href="lib/css/bootstrap-theme.min.css">
+		<link rel="stylesheet" href="lib/css/style.css" >
+		<link rel="stylesheet" href="lib/photoswipe/photoswipe.css">
+		<link rel="stylesheet" href="lib/photoswipe/default-skin/default-skin.css">
+	</head>
 
-<body>
-
-<!-- Header -->
-<header>
-    <div class="header_plane anim"></div>
-</header>
-<!-- Header End -->
-
-<div class="page">
-    
-    <section class="main_ticket" data-image="photo/mobile_01.jpg">
-		<div>
-			<a href="javascript:void(0);" onclick="showContactsModal()">
-				<img id="contact" src="photo/mobile_01_contact_button.jpg" class="contact_button">
-				<img id="contact_parent" style="display:none" src="photo/mobile_01_parent_contact_button.jpg" class="contact_button">
-			</a>
-			
-			<div id="contact_popup" class="modal">
-				<div class="modal-content" >
-					<div class="close">&times;</div> 
-					<section id="contact_popup_default">
-						<img src="photo/mobile_popup.png" class="contact_popup">
-						
-						<a href="sms:010-3123-1233">
-							<img src="photo/mobile_popup_message.png" class="contact_popup_first">
-						</a>
-						
-						<a href="sms:010-6691-1185">
-							<img src="photo/mobile_popup_message.png" class="contact_popup_second">
-						</a>
-						
-						<a href="javascript:void(0);" onclick="copyBrideAccount()">
-							<img src="photo/mobile_popup_button_bride_account.png" class="contact_popup_first_account">
-						</a>
-						
-						<a href="javascript:void(0);" onclick="copyGroomAccount()">
-							<img src="photo/mobile_popup_button_groom_account.png" class="contact_popup_second_account">
-						</a>
-					</section>
+	<body>
+	
+		<div class="page">
+			<section class="main_ticket" data-image="photo/mobile_01.jpg">
+				<div>
+					<a href="javascript:void(0);" onclick="showContactsModal()">
+						<img id="contact" src="photo/mobile_01_contact_button.jpg" class="contact_button">
+						<img id="contact_parent" style="display:none" src="photo/mobile_01_parent_contact_button.jpg" class="contact_button">
+					</a>
 					
-					<section id="contact_popup_jeonghyeon" style="display: none">
-						<img src="photo/mobile_popup_jeonghyeon.png" class="contact_popup">
-						
-						<a href="tel:010-5682-1185">
-							<img src="photo/mobile_popup_call.png" class="contact_popup_jeonghyeon_first_call">
-						</a>
-						
-						<a href="sms:010-5682-1185">
-							<img src="photo/mobile_popup_message.png" class="contact_popup_jeonghyeon_first_message">
-						</a>
-						
-						<a href="tel:010-6692-1185">
-							<img src="photo/mobile_popup_call.png" class="contact_popup_jeonghyeon_second_call">
-						</a>
-						
-						<a href="sms:010-6692-1185">
-							<img src="photo/mobile_popup_message.png" class="contact_popup_jeonghyeon_second_message">
-						</a>
-						
-						<a href="javascript:void(0);" onclick="copyJeongHyeonAccount()">
-							<img src="photo/mobile_popup_button_jeonghyeon_account.png" class="contact_popup_jeonghyeon_account">
-						</a>
-					
-					</section>
-					
-					<section id="contact_popup_mina" style="display: none">
-						<img src="photo/mobile_popup_mina.png" class="contact_popup">
-						
-						<a href="tel:010-3799-6931">
-							<img src="photo/mobile_popup_call.png" class="contact_popup_mina_first_call">
-						</a>
-						
-						<a href="sms:010-3799-6931">
-							<img src="photo/mobile_popup_message.png" class="contact_popup_mina_first_message">
-						</a>
-						
-						<a href="tel:010-5473-4894">
-							<img src="photo/mobile_popup_call.png" class="contact_popup_mina_second_call">
-						</a>
-						
-						<a href="sms:010-5473-4894">
-							<img src="photo/mobile_popup_message.png" class="contact_popup_mina_second_message">
-						</a>
-						
-						<a href="javascript:void(0);" onclick="copyMinaMomAccount()">
-							<img src="photo/mobile_popup_button_mina_mom_account.png" class="contact_popup_mina_mom_account">
-						</a>
-						
-						<a href="javascript:void(0);" onclick="copyMinaDadAccount()">
-							<img src="photo/mobile_popup_button_mina_dad_account.png" class="contact_popup_mina_dad_account">
-						</a>
-					</section>
-				</div>
-			</div>
-		</div>
-		
-		<div>
-			<a href="javascript:void(0);" onclick="showStoryModal()">
-				<img src="photo/mobile_01_story_button.jpg" class="story_button">
-			</a>
-			
-			<div id="story_popup" class="modal">
-				<div class="modal_content_story" >
-					<section>
-						<div class="story_close">&times;</div> 
-						<div id="carousel-example-generic" class="carousel slide" data-ride="carousel"></div>
-						
-						<div id="storyCarousel" class="carousel slide" data-ride="carousel">
-							<div class="carousel-inner">
-								<div class="carousel-item active">
-									<img class="story_image" src="photo/mobile_popup_story_1.jpg">
-								</div>
+					<div id="contact_popup" class="modal">
+						<div class="modal-content" >
+							<div class="close">&times;</div> 
+							<section id="contact_popup_default">
+								<img src="photo/mobile_popup.png" class="contact_popup">
 								
-								<div class="carousel-item">
-									<img class="story_image" src="photo/mobile_popup_story_2.jpg">
-								</div>
+								<a href="sms:010-3123-1233">
+									<img src="photo/mobile_popup_message.png" class="contact_popup_first">
+								</a>
 								
-								<div class="carousel-item">
-									<img class="story_image" src="photo/mobile_popup_story_3.jpg">
-								</div>
+								<a href="sms:010-6691-1185">
+									<img src="photo/mobile_popup_message.png" class="contact_popup_second">
+								</a>
 								
-								<div class="carousel-item">
-									<img class="story_image" src="photo/mobile_popup_story_4.jpg">
-								</div>
-							</div>
+								<a href="javascript:void(0);" onclick="copyBrideAccount()">
+									<img src="photo/mobile_popup_button_bride_account.png" class="contact_popup_first_account">
+								</a>
+								
+								<a href="javascript:void(0);" onclick="copyGroomAccount()">
+									<img src="photo/mobile_popup_button_groom_account.png" class="contact_popup_second_account">
+								</a>
+							</section>
 							
-							<!-- Control dots -->
-							<ol class="carousel-indicators" style="bottom:10px">
-								<li data-target="#storyCarousel" data-slide-to="0" class="active"></li>
-								<li data-target="#storyCarousel" data-slide-to="1"></li>
-								<li data-target="#storyCarousel" data-slide-to="2"></li>
-								<li data-target="#storyCarousel" data-slide-to="3"></li>
-							</ol>
+							<section id="contact_popup_jeonghyeon" style="display: none">
+								<img src="photo/mobile_popup_jeonghyeon.png" class="contact_popup">
+								
+								<a href="tel:010-5682-1185">
+									<img src="photo/mobile_popup_call.png" class="contact_popup_jeonghyeon_first_call">
+								</a>
+								
+								<a href="sms:010-5682-1185">
+									<img src="photo/mobile_popup_message.png" class="contact_popup_jeonghyeon_first_message">
+								</a>
+								
+								<a href="tel:010-6692-1185">
+									<img src="photo/mobile_popup_call.png" class="contact_popup_jeonghyeon_second_call">
+								</a>
+								
+								<a href="sms:010-6692-1185">
+									<img src="photo/mobile_popup_message.png" class="contact_popup_jeonghyeon_second_message">
+								</a>
+								
+								<a href="javascript:void(0);" onclick="copyJeongHyeonAccount()">
+									<img src="photo/mobile_popup_button_jeonghyeon_account.png" class="contact_popup_jeonghyeon_account">
+								</a>
+							
+							</section>
+							
+							<section id="contact_popup_mina" style="display: none">
+								<img src="photo/mobile_popup_mina.png" class="contact_popup">
+								
+								<a href="tel:010-3799-6931">
+									<img src="photo/mobile_popup_call.png" class="contact_popup_mina_first_call">
+								</a>
+								
+								<a href="sms:010-3799-6931">
+									<img src="photo/mobile_popup_message.png" class="contact_popup_mina_first_message">
+								</a>
+								
+								<a href="tel:010-5473-4894">
+									<img src="photo/mobile_popup_call.png" class="contact_popup_mina_second_call">
+								</a>
+								
+								<a href="sms:010-5473-4894">
+									<img src="photo/mobile_popup_message.png" class="contact_popup_mina_second_message">
+								</a>
+								
+								<a href="javascript:void(0);" onclick="copyMinaMomAccount()">
+									<img src="photo/mobile_popup_button_mina_mom_account.png" class="contact_popup_mina_mom_account">
+								</a>
+								
+								<a href="javascript:void(0);" onclick="copyMinaDadAccount()">
+									<img src="photo/mobile_popup_button_mina_dad_account.png" class="contact_popup_mina_dad_account">
+								</a>
+							</section>
 						</div>
-
-					</section>
-					
-				</div>
-			</div>
-		</div>
-	</section>
-	
-	<section class="notice" data-image="photo/mobile_02.jpg"></section>
-	
-	<section class="photo_booth" data-image="photo/mobile_03.jpg"></section>
-		
-	<section class="photo_grid">
-		<div id="myCarousel" class="carousel slide" data-ride="carousel">
-			<div class="carousel-inner">
-				<div class="carousel-item active">
-					<div class="my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
-						<figure>
-							<a href="photo/grid/1-1.jpg" style="background:url(photo/grid/thumb/1-1.jpg) no-repeat center center" itemprop="contentUrl" data-size="640x947" class="setimgsize">
-								<img src="photo/grid/thumb/img_frame.png" class="img_frame" itemprop="thumbnail" alt="">
-							</a>
-						</figure>
-						
-						<figure>
-							<a href="photo/grid/1-2.jpg" style="background:url(photo/grid/thumb/1-2.jpg) no-repeat center center" itemprop="contentUrl" data-size="640x947" class="setimgsize">
-								<img src="photo/grid/thumb/img_frame.png" class="img_frame" itemprop="thumbnail" alt="">
-							</a>
-						</figure>
-						
-						<figure>
-							<a href="photo/grid/1-3.jpg" style="background:url(photo/grid/thumb/1-3.jpg) no-repeat center center" itemprop="contentUrl" data-size="640x947" class="setimgsize">
-								<img src="photo/grid/thumb/img_frame.png" class="img_frame" itemprop="thumbnail" alt="">
-							</a>
-						</figure>
-						
-						<figure>
-							<a href="photo/grid/2-1.jpg" style="background:url(photo/grid/thumb/2-1.jpg) no-repeat center center" itemprop="contentUrl" data-size="640x947" class="setimgsize">
-								<img src="photo/grid/thumb/img_frame.png" class="img_frame" itemprop="thumbnail" alt="">
-							</a>
-						</figure>
-						
-						<figure>
-							<a href="photo/grid/2-2.jpg" style="background:url(photo/grid/thumb/2-2.jpg) no-repeat center center" itemprop="contentUrl" data-size="640x947" class="setimgsize">
-								<img src="photo/grid/thumb/img_frame.png" class="img_frame" itemprop="thumbnail" alt="">
-							</a>
-						</figure>
-						
-						<figure>
-							<a href="photo/grid/2-3.jpg" style="background:url(photo/grid/thumb/2-3.jpg) no-repeat center center" itemprop="contentUrl" data-size="640x947" class="setimgsize">
-								<img src="photo/grid/thumb/img_frame.png" class="img_frame" itemprop="thumbnail" alt="">
-							</a>
-						</figure>
-						
-						<figure>
-							<a href="photo/grid/3-1.jpg" style="background:url(photo/grid/thumb/3-1.jpg) no-repeat center center" itemprop="contentUrl" data-size="640x947" class="setimgsize">
-								<img src="photo/grid/thumb/img_frame.png" class="img_frame" itemprop="thumbnail" alt="">
-							</a>
-						</figure>
-						
-						<figure>
-							<a href="photo/grid/3-2.jpg" style="background:url(photo/grid/thumb/3-2.jpg) no-repeat center center" itemprop="contentUrl" data-size="640x947" class="setimgsize">
-								<img src="photo/grid/thumb/img_frame.png" class="img_frame" itemprop="thumbnail" alt="">
-							</a>
-						</figure>
-						
-						<figure>
-							<a href="photo/grid/3-3.jpg" style="background:url(photo/grid/thumb/3-3.jpg) no-repeat center center" itemprop="contentUrl" data-size="640x947" class="setimgsize">
-								<img src="photo/grid/thumb/img_frame.png" class="img_frame" itemprop="thumbnail" alt="">
-							</a>
-						</figure>
 					</div>
 				</div>
 				
-				<div class="carousel-item">
-					<div class="my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
-						<figure>
-							<a href="photo/grid/4-1.jpg" style="background:url(photo/grid/thumb/4-1.jpg) no-repeat center center" itemprop="contentUrl" data-size="640x947" class="setimgsize">
-								<img src="photo/grid/thumb/img_frame.png" class="img_frame" itemprop="thumbnail" alt="">
-							</a>
-						</figure>
-						
-						<figure>
-							<a href="photo/grid/4-2.jpg" style="background:url(photo/grid/thumb/4-2.jpg) no-repeat center center" itemprop="contentUrl" data-size="640x947" class="setimgsize">
-								<img src="photo/grid/thumb/img_frame.png" class="img_frame" itemprop="thumbnail" alt="">
-							</a>
-						</figure>
-						
-						<figure>
-							<a href="photo/grid/4-3.jpg" style="background:url(photo/grid/thumb/4-3.jpg) no-repeat center center" itemprop="contentUrl" data-size="640x947" class="setimgsize">
-								<img src="photo/grid/thumb/img_frame.png" class="img_frame" itemprop="thumbnail" alt="">
-							</a>
-						</figure>
-						
-						<figure>
-							<a href="photo/grid/5-1.jpg" style="background:url(photo/grid/thumb/5-1.jpg) no-repeat center center" itemprop="contentUrl" data-size="640x947" class="setimgsize">
-								<img src="photo/grid/thumb/img_frame.png" class="img_frame" itemprop="thumbnail" alt="">
-							</a>
-						</figure>
-						
-						<figure>
-							<a href="photo/grid/5-2.jpg" style="background:url(photo/grid/thumb/5-2.jpg) no-repeat center center" itemprop="contentUrl" data-size="640x947" class="setimgsize">
-								<img src="photo/grid/thumb/img_frame.png" class="img_frame" itemprop="thumbnail" alt="">
-							</a>
-						</figure>
-						
-						<figure>
-							<a href="photo/grid/5-3.jpg" style="background:url(photo/grid/thumb/5-3.jpg) no-repeat center center" itemprop="contentUrl" data-size="640x947" class="setimgsize">
-								<img src="photo/grid/thumb/img_frame.png" class="img_frame" itemprop="thumbnail" alt="">
-							</a>
-						</figure>
-						
-						<figure>
-							<a href="photo/grid/6-1.jpg" style="background:url(photo/grid/thumb/6-1.jpg) no-repeat center center" itemprop="contentUrl" data-size="640x947" class="setimgsize">
-								<img src="photo/grid/thumb/img_frame.png" class="img_frame" itemprop="thumbnail" alt="">
-							</a>
-						</figure>
-						
-						<figure>
-							<a href="photo/grid/6-2.jpg" style="background:url(photo/grid/thumb/6-2.jpg) no-repeat center center" itemprop="contentUrl" data-size="640x947" class="setimgsize">
-								<img src="photo/grid/thumb/img_frame.png" class="img_frame" itemprop="thumbnail" alt="">
-							</a>
-						</figure>
-						
-						<figure>
-							<a href="photo/grid/6-3.jpg" style="background:url(photo/grid/thumb/6-3.jpg) no-repeat center center" itemprop="contentUrl" data-size="640x947" class="setimgsize">
-								<img src="photo/grid/thumb/img_frame.png" class="img_frame" itemprop="thumbnail" alt="">
-							</a>
-						</figure>
+				<div>
+					<a href="javascript:void(0);" onclick="showStoryModal()">
+						<img src="photo/mobile_01_story_button.jpg" class="story_button">
+					</a>
+					
+					<div id="story_popup" class="modal">
+						<div class="modal_content_story" >
+							<section>
+								<div class="story_close">&times;</div> 
+								<div id="carousel-example-generic" class="carousel slide" data-ride="carousel"></div>
+								
+								<div id="storyCarousel" class="carousel slide" data-ride="carousel">
+									<div class="carousel-inner">
+										<div class="carousel-item active">
+											<img class="story_image" src="photo/mobile_popup_story_1.jpg">
+										</div>
+										
+										<div class="carousel-item">
+											<img class="story_image" src="photo/mobile_popup_story_2.jpg">
+										</div>
+										
+										<div class="carousel-item">
+											<img class="story_image" src="photo/mobile_popup_story_3.jpg">
+										</div>
+										
+										<div class="carousel-item">
+											<img class="story_image" src="photo/mobile_popup_story_4.jpg">
+										</div>
+									</div>
+									
+									<!-- Control dots -->
+									<ol class="carousel-indicators" style="bottom:10px">
+										<li data-target="#storyCarousel" data-slide-to="0" class="active"></li>
+										<li data-target="#storyCarousel" data-slide-to="1"></li>
+										<li data-target="#storyCarousel" data-slide-to="2"></li>
+										<li data-target="#storyCarousel" data-slide-to="3"></li>
+									</ol>
+								</div>
+
+							</section>
+							
+						</div>
 					</div>
 				</div>
-			</div>
+			</section>
 			
-			<!-- Control dots -->
-			<ol class="carousel-indicators">
-				<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-				<li data-target="#myCarousel" data-slide-to="1"></li>
-			</ol>
+			<section class="notice" data-image="photo/mobile_02.jpg"></section>
 			
-		</div>
-		
-	
-		<!-- Root element of PhotoSwipe. Must have class pswp. -->
-		<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
-
-			<!-- Background of PhotoSwipe. 
-			It's a separate element, as animating opacity is faster than rgba(). -->
-			<div class="pswp__bg"></div>
-
-			<!-- Slides wrapper with overflow:hidden. -->
-			<div class="pswp__scroll-wrap">
-
-				<!-- Container that holds slides. PhotoSwipe keeps only 3 slides in DOM to save memory. -->
-				<!-- don't modify these 3 pswp__item elements, data is added later on. -->
-				<div class="pswp__container">
-					<div class="pswp__item"></div>
-					<div class="pswp__item"></div>
-					<div class="pswp__item"></div>
-				</div>
-
-				<!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
-				<div class="pswp__ui pswp__ui--hidden">
-
-					<div class="pswp__top-bar">
-
-						<!--  Controls are self-explanatory. Order can be changed. -->
-
-						<div class="pswp__counter"></div>
-
-						<button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+			<section class="photo_booth" data-image="photo/mobile_03.jpg"></section>
+				
+			<section class="photo_grid">
+				<div id="myCarousel" class="carousel slide" data-ride="carousel">
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+							<div class="my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
+								<figure>
+									<a href="photo/grid/1-1.jpg" style="background:url(photo/grid/thumb/1-1.jpg) no-repeat center center" itemprop="contentUrl" data-size="640x947" class="setimgsize">
+										<img src="photo/grid/thumb/img_frame.png" class="img_frame" itemprop="thumbnail" alt="">
+									</a>
+								</figure>
+								
+								<figure>
+									<a href="photo/grid/1-2.jpg" style="background:url(photo/grid/thumb/1-2.jpg) no-repeat center center" itemprop="contentUrl" data-size="640x947" class="setimgsize">
+										<img src="photo/grid/thumb/img_frame.png" class="img_frame" itemprop="thumbnail" alt="">
+									</a>
+								</figure>
+								
+								<figure>
+									<a href="photo/grid/1-3.jpg" style="background:url(photo/grid/thumb/1-3.jpg) no-repeat center center" itemprop="contentUrl" data-size="640x947" class="setimgsize">
+										<img src="photo/grid/thumb/img_frame.png" class="img_frame" itemprop="thumbnail" alt="">
+									</a>
+								</figure>
+								
+								<figure>
+									<a href="photo/grid/2-1.jpg" style="background:url(photo/grid/thumb/2-1.jpg) no-repeat center center" itemprop="contentUrl" data-size="640x947" class="setimgsize">
+										<img src="photo/grid/thumb/img_frame.png" class="img_frame" itemprop="thumbnail" alt="">
+									</a>
+								</figure>
+								
+								<figure>
+									<a href="photo/grid/2-2.jpg" style="background:url(photo/grid/thumb/2-2.jpg) no-repeat center center" itemprop="contentUrl" data-size="640x947" class="setimgsize">
+										<img src="photo/grid/thumb/img_frame.png" class="img_frame" itemprop="thumbnail" alt="">
+									</a>
+								</figure>
+								
+								<figure>
+									<a href="photo/grid/2-3.jpg" style="background:url(photo/grid/thumb/2-3.jpg) no-repeat center center" itemprop="contentUrl" data-size="640x947" class="setimgsize">
+										<img src="photo/grid/thumb/img_frame.png" class="img_frame" itemprop="thumbnail" alt="">
+									</a>
+								</figure>
+								
+								<figure>
+									<a href="photo/grid/3-1.jpg" style="background:url(photo/grid/thumb/3-1.jpg) no-repeat center center" itemprop="contentUrl" data-size="640x947" class="setimgsize">
+										<img src="photo/grid/thumb/img_frame.png" class="img_frame" itemprop="thumbnail" alt="">
+									</a>
+								</figure>
+								
+								<figure>
+									<a href="photo/grid/3-2.jpg" style="background:url(photo/grid/thumb/3-2.jpg) no-repeat center center" itemprop="contentUrl" data-size="640x947" class="setimgsize">
+										<img src="photo/grid/thumb/img_frame.png" class="img_frame" itemprop="thumbnail" alt="">
+									</a>
+								</figure>
+								
+								<figure>
+									<a href="photo/grid/3-3.jpg" style="background:url(photo/grid/thumb/3-3.jpg) no-repeat center center" itemprop="contentUrl" data-size="640x947" class="setimgsize">
+										<img src="photo/grid/thumb/img_frame.png" class="img_frame" itemprop="thumbnail" alt="">
+									</a>
+								</figure>
+							</div>
+						</div>
 						
-						<!-- Preloader demo https://codepen.io/dimsemenov/pen/yyBWoR -->
-						<!-- element will get class pswp__preloader--active when preloader is running -->
-						<div class="pswp__preloader">
-							<div class="pswp__preloader__icn">
-								<div class="pswp__preloader__cut">
-									<div class="pswp__preloader__donut"></div>
-								</div>
+						<div class="carousel-item">
+							<div class="my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
+								<figure>
+									<a href="photo/grid/4-1.jpg" style="background:url(photo/grid/thumb/4-1.jpg) no-repeat center center" itemprop="contentUrl" data-size="640x947" class="setimgsize">
+										<img src="photo/grid/thumb/img_frame.png" class="img_frame" itemprop="thumbnail" alt="">
+									</a>
+								</figure>
+								
+								<figure>
+									<a href="photo/grid/4-2.jpg" style="background:url(photo/grid/thumb/4-2.jpg) no-repeat center center" itemprop="contentUrl" data-size="640x947" class="setimgsize">
+										<img src="photo/grid/thumb/img_frame.png" class="img_frame" itemprop="thumbnail" alt="">
+									</a>
+								</figure>
+								
+								<figure>
+									<a href="photo/grid/4-3.jpg" style="background:url(photo/grid/thumb/4-3.jpg) no-repeat center center" itemprop="contentUrl" data-size="640x947" class="setimgsize">
+										<img src="photo/grid/thumb/img_frame.png" class="img_frame" itemprop="thumbnail" alt="">
+									</a>
+								</figure>
+								
+								<figure>
+									<a href="photo/grid/5-1.jpg" style="background:url(photo/grid/thumb/5-1.jpg) no-repeat center center" itemprop="contentUrl" data-size="640x947" class="setimgsize">
+										<img src="photo/grid/thumb/img_frame.png" class="img_frame" itemprop="thumbnail" alt="">
+									</a>
+								</figure>
+								
+								<figure>
+									<a href="photo/grid/5-2.jpg" style="background:url(photo/grid/thumb/5-2.jpg) no-repeat center center" itemprop="contentUrl" data-size="640x947" class="setimgsize">
+										<img src="photo/grid/thumb/img_frame.png" class="img_frame" itemprop="thumbnail" alt="">
+									</a>
+								</figure>
+								
+								<figure>
+									<a href="photo/grid/5-3.jpg" style="background:url(photo/grid/thumb/5-3.jpg) no-repeat center center" itemprop="contentUrl" data-size="640x947" class="setimgsize">
+										<img src="photo/grid/thumb/img_frame.png" class="img_frame" itemprop="thumbnail" alt="">
+									</a>
+								</figure>
+								
+								<figure>
+									<a href="photo/grid/6-1.jpg" style="background:url(photo/grid/thumb/6-1.jpg) no-repeat center center" itemprop="contentUrl" data-size="640x947" class="setimgsize">
+										<img src="photo/grid/thumb/img_frame.png" class="img_frame" itemprop="thumbnail" alt="">
+									</a>
+								</figure>
+								
+								<figure>
+									<a href="photo/grid/6-2.jpg" style="background:url(photo/grid/thumb/6-2.jpg) no-repeat center center" itemprop="contentUrl" data-size="640x947" class="setimgsize">
+										<img src="photo/grid/thumb/img_frame.png" class="img_frame" itemprop="thumbnail" alt="">
+									</a>
+								</figure>
+								
+								<figure>
+									<a href="photo/grid/6-3.jpg" style="background:url(photo/grid/thumb/6-3.jpg) no-repeat center center" itemprop="contentUrl" data-size="640x947" class="setimgsize">
+										<img src="photo/grid/thumb/img_frame.png" class="img_frame" itemprop="thumbnail" alt="">
+									</a>
+								</figure>
 							</div>
 						</div>
 					</div>
+					
+					<!-- Control dots -->
+					<ol class="carousel-indicators">
+						<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+						<li data-target="#myCarousel" data-slide-to="1"></li>
+					</ol>
+					
+				</div>
+				
+			
+				<!-- Root element of PhotoSwipe. Must have class pswp. -->
+				<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
 
-					<div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
-						<div class="pswp__share-tooltip"></div> 
-					</div>
+					<!-- Background of PhotoSwipe. 
+					It's a separate element, as animating opacity is faster than rgba(). -->
+					<div class="pswp__bg"></div>
 
-					<button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button>
-					<button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"></button>
+					<!-- Slides wrapper with overflow:hidden. -->
+					<div class="pswp__scroll-wrap">
 
-					<div class="pswp__caption">
-						<div class="pswp__caption__center"></div>
+						<!-- Container that holds slides. PhotoSwipe keeps only 3 slides in DOM to save memory. -->
+						<!-- don't modify these 3 pswp__item elements, data is added later on. -->
+						<div class="pswp__container">
+							<div class="pswp__item"></div>
+							<div class="pswp__item"></div>
+							<div class="pswp__item"></div>
+						</div>
+
+						<!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+						<div class="pswp__ui pswp__ui--hidden">
+
+							<div class="pswp__top-bar">
+
+								<!--  Controls are self-explanatory. Order can be changed. -->
+
+								<div class="pswp__counter"></div>
+
+								<button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+								
+								<!-- Preloader demo https://codepen.io/dimsemenov/pen/yyBWoR -->
+								<!-- element will get class pswp__preloader--active when preloader is running -->
+								<div class="pswp__preloader">
+									<div class="pswp__preloader__icn">
+										<div class="pswp__preloader__cut">
+											<div class="pswp__preloader__donut"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+								<div class="pswp__share-tooltip"></div> 
+							</div>
+
+							<button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button>
+							<button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"></button>
+
+							<div class="pswp__caption">
+								<div class="pswp__caption__center"></div>
+							</div>
+
+						</div>
+
 					</div>
 
 				</div>
-
-			</div>
-
-		</div>
-		
-	</section>
-	
-	<section class="mid_image" data-image="photo/mobile_04.jpg"></section>
-	
-	<section class="soccer" data-image="photo/mobile_05.jpg">
-		<a href="javascript:void(0);" onclick="showSoccerImage()">
-			<img src="photo/mobile_05_button.gif" class="soccer_button">
-		</a>		
-	</section>
-	
-	<section id="photo4" class="photo_4" data-image="photo/mobile_06.jpg">
-		<img id="photo4_hidden" src="photo/mobile_06_soccer.jpg" class="photo_4_soccer">
-	</section>
-	
-	<section class="information" data-image="photo/mobile_07.jpg">
-		<a href="javascript:void(0);" onclick="copyAddress()">
-			<img src="photo/mobile_07_button.jpg" class="address_copy_button">
-		</a>
-	</section>
-	
-	<section>
-		<div id="map" class="information_map"></div>
-	</section>
-	
-	<section class="information2" data-image="photo/mobile_08.jpg"></section>
-	
-	<section class="end" data-image="photo/mobile_09.jpg"></section>
-	
-    <script src="lib/jquery.min.js"></script>
-	<script src="lib/bootstrap.js"></script>
-    <script src="lib/bootstrap.min.js"></script>
-    <script src="lib/skrollr.min.js"></script>
-	<script src="lib/script.js"></script>
-	<script src="lib/photoswipe/photoswipe.js"></script>
-    <script src="lib/photoswipe/photoswipe-ui-default.min.js"></script>
-    <script src="lib/jquery-ui.min.js"></script>
-
-    <script>
-		(function() {
-			var urlParams = new URLSearchParams(window.location.search);
-			var metaTitle = "이정현 & 전민아의 모바일 청접장 🕊"
-			
-			var contactButton = document.getElementById('contact');
-			var parentContactButton = document.getElementById('contact_parent');
-			
-			var contactPopupDefault = document.getElementById('contact_popup_default');
-			var contactPopupJeongHyeon = document.getElementById('contact_popup_jeonghyeon');
-			var contactPopupMina = document.getElementById('contact_popup_mina');
-			
-			if (urlParams.has('jeonghyeon')) {
-				metaTitle = "우리 아들 결혼합니다.";
-				contactButton.style.display = "none";
-				parentContactButton.style.display = "inline";
 				
-				contactPopupDefault.style.display = "none";
-				contactPopupJeongHyeon.style.display = "inline";
-				contactPopupMina.style.display = "none";
-			} else if (urlParams.has('mina')) {
-				metaTitle = "우리 딸 결혼합니다.";
-				contactButton.style.display = "none";
-				parentContactButton.style.display = "inline";
-				
-				contactPopupDefault.style.display = "none";
-				contactPopupJeongHyeon.style.display = "none";
-				contactPopupMina.style.display = "inline";
-			}
+			</section>
 			
-			$("meta[property='og\\:title']").attr("content", metaTitle);
-		}());
-				
-		<!-- Naver Map -->
-		var map = new naver.maps.Map('map', {
-			center: new naver.maps.LatLng(37.27784530713695, 127.03236625843981),
-			zoom: 15
-		});
-		
-		var marker = new naver.maps.Marker({
-			position: new naver.maps.LatLng(37.27784530713695, 127.03236625843981),
-			map: map
-		});
-		
-		naver.maps.Event.addListener(marker, 'click', function(e) {			
-			var overlay = e.overlay,
-			position = overlay.getPosition(),
-			url = 'https://map.naver.com/v5/entry/place/13093428?c=14140761.8524436,4477833.9910022,15,0,0,0,dh';
+			<section class="mid_image" data-image="photo/mobile_04.jpg"></section>
+			
+			<section class="soccer" data-image="photo/mobile_05.jpg">
+				<a href="javascript:void(0);" onclick="showSoccerImage()">
+					<img src="photo/mobile_05_button.gif" class="soccer_button">
+				</a>		
+			</section>
+			
+			<section id="photo4" class="photo_4" data-image="photo/mobile_06.jpg">
+				<img id="photo4_hidden" src="photo/mobile_06_soccer.jpg" class="photo_4_soccer">
+			</section>
+			
+			<section class="information" data-image="photo/mobile_07.jpg">
+				<a href="javascript:void(0);" onclick="copyAddress()">
+					<img src="photo/mobile_07_button.jpg" class="address_copy_button">
+				</a>
+			</section>
+			
+			<section>
+				<div id="map" class="information_map"></div>
+			</section>
+			
+			<section class="information2" data-image="photo/mobile_08.jpg"></section>
+			
+			<section class="end" data-image="photo/mobile_09.jpg"></section>
+			
+			<script src="lib/jquery.min.js"></script>
+			<script src="lib/bootstrap.js"></script>
+			<script src="lib/bootstrap.min.js"></script>
+			<script src="lib/skrollr.min.js"></script>
+			<script src="lib/script.js"></script>
+			<script src="lib/photoswipe/photoswipe.js"></script>
+			<script src="lib/photoswipe/photoswipe-ui-default.min.js"></script>
+			<script src="lib/jquery-ui.min.js"></script>
 
-			window.open(url);
-		});
-		<!-- Naver Map -->
-	
-		<!-- Photo Swipe -->
-		var initPhotoSwipeFromDOM = function(gallerySelector) {
-
-			// parse slide data (url, title, size ...) from DOM elements 
-			// (children of gallerySelector)
-			var parseThumbnailElements = function(el) {
-				var thumbElements = el.childNodes,
-					numNodes = thumbElements.length,
-					items = [],
-					figureEl,
-					linkEl,
-					size,
-					item;
-
-				for(var i = 0; i < numNodes; i++) {
-
-					figureEl = thumbElements[i]; // <figure> element
-
-					// include only element nodes 
-					if(figureEl.nodeType !== 1) {
-						continue;
+			<script>
+				(function() {
+					var urlParams = new URLSearchParams(window.location.search);
+					var metaTitle = "이정현 & 전민아의 모바일 청접장 🕊"
+					
+					var contactButton = document.getElementById('contact');
+					var parentContactButton = document.getElementById('contact_parent');
+					
+					var contactPopupDefault = document.getElementById('contact_popup_default');
+					var contactPopupJeongHyeon = document.getElementById('contact_popup_jeonghyeon');
+					var contactPopupMina = document.getElementById('contact_popup_mina');
+					
+					if (urlParams.has('jeonghyeon')) {
+						metaTitle = "우리 아들 결혼합니다.";
+						contactButton.style.display = "none";
+						parentContactButton.style.display = "inline";
+						
+						contactPopupDefault.style.display = "none";
+						contactPopupJeongHyeon.style.display = "inline";
+						contactPopupMina.style.display = "none";
+					} else if (urlParams.has('mina')) {
+						metaTitle = "우리 딸 결혼합니다.";
+						contactButton.style.display = "none";
+						parentContactButton.style.display = "inline";
+						
+						contactPopupDefault.style.display = "none";
+						contactPopupJeongHyeon.style.display = "none";
+						contactPopupMina.style.display = "inline";
 					}
+					
+					$("meta[property='og\\:title']").attr("content", metaTitle);
+				}());
+						
+				<!-- Naver Map -->
+				var map = new naver.maps.Map('map', {
+					center: new naver.maps.LatLng(37.27784530713695, 127.03236625843981),
+					zoom: 15
+				});
+				
+				var marker = new naver.maps.Marker({
+					position: new naver.maps.LatLng(37.27784530713695, 127.03236625843981),
+					map: map
+				});
+				
+				naver.maps.Event.addListener(marker, 'click', function(e) {			
+					var overlay = e.overlay,
+					position = overlay.getPosition(),
+					url = 'https://map.naver.com/v5/entry/place/13093428?c=14140761.8524436,4477833.9910022,15,0,0,0,dh';
 
-					linkEl = figureEl.children[0]; // <a> element
+					window.open(url);
+				});
+				<!-- Naver Map -->
+			
+				<!-- Photo Swipe -->
+				var initPhotoSwipeFromDOM = function(gallerySelector) {
 
-					size = linkEl.getAttribute('data-size').split('x');
+					// parse slide data (url, title, size ...) from DOM elements 
+					// (children of gallerySelector)
+					var parseThumbnailElements = function(el) {
+						var thumbElements = el.childNodes,
+							numNodes = thumbElements.length,
+							items = [],
+							figureEl,
+							linkEl,
+							size,
+							item;
 
-					// create slide object
-					item = {
-						src: linkEl.getAttribute('href'),
-						w: parseInt(size[0], 10),
-						h: parseInt(size[1], 10)
+						for(var i = 0; i < numNodes; i++) {
+
+							figureEl = thumbElements[i]; // <figure> element
+
+							// include only element nodes 
+							if(figureEl.nodeType !== 1) {
+								continue;
+							}
+
+							linkEl = figureEl.children[0]; // <a> element
+
+							size = linkEl.getAttribute('data-size').split('x');
+
+							// create slide object
+							item = {
+								src: linkEl.getAttribute('href'),
+								w: parseInt(size[0], 10),
+								h: parseInt(size[1], 10)
+							};
+
+
+
+							if(figureEl.children.length > 1) {
+								// <figcaption> content
+								item.title = figureEl.children[1].innerHTML; 
+							}
+
+							if(linkEl.children.length > 0) {
+								// <img> thumbnail element, retrieving thumbnail url
+								item.msrc = linkEl.children[0].getAttribute('src');
+							} 
+
+							item.el = figureEl; // save link to element for getThumbBoundsFn
+							items.push(item);
+						}
+
+						return items;
 					};
 
+					// find nearest parent element
+					var closest = function closest(el, fn) {
+						return el && ( fn(el) ? el : closest(el.parentNode, fn) );
+					};
 
+					// triggers when user clicks on thumbnail
+					var onThumbnailsClick = function(e) {
+						e = e || window.event;
+						e.preventDefault ? e.preventDefault() : e.returnValue = false;
 
-					if(figureEl.children.length > 1) {
-						// <figcaption> content
-						item.title = figureEl.children[1].innerHTML; 
-					}
+						var eTarget = e.target || e.srcElement;
 
-					if(linkEl.children.length > 0) {
-						// <img> thumbnail element, retrieving thumbnail url
-						item.msrc = linkEl.children[0].getAttribute('src');
-					} 
+						// find root element of slide
+						var clickedListItem = closest(eTarget, function(el) {
+							return (el.tagName && el.tagName.toUpperCase() === 'FIGURE');
+						});
 
-					item.el = figureEl; // save link to element for getThumbBoundsFn
-					items.push(item);
-				}
+						if(!clickedListItem) {
+							return;
+						}
 
-				return items;
-			};
+						// find index of clicked item by looping through all child nodes
+						// alternatively, you may define index via data- attribute
+						var clickedGallery = clickedListItem.parentNode,
+							childNodes = clickedListItem.parentNode.childNodes,
+							numChildNodes = childNodes.length,
+							nodeIndex = 0,
+							index;
 
-			// find nearest parent element
-			var closest = function closest(el, fn) {
-				return el && ( fn(el) ? el : closest(el.parentNode, fn) );
-			};
+						for (var i = 0; i < numChildNodes; i++) {
+							if(childNodes[i].nodeType !== 1) { 
+								continue; 
+							}
 
-			// triggers when user clicks on thumbnail
-			var onThumbnailsClick = function(e) {
-				e = e || window.event;
-				e.preventDefault ? e.preventDefault() : e.returnValue = false;
-
-				var eTarget = e.target || e.srcElement;
-
-				// find root element of slide
-				var clickedListItem = closest(eTarget, function(el) {
-					return (el.tagName && el.tagName.toUpperCase() === 'FIGURE');
-				});
-
-				if(!clickedListItem) {
-					return;
-				}
-
-				// find index of clicked item by looping through all child nodes
-				// alternatively, you may define index via data- attribute
-				var clickedGallery = clickedListItem.parentNode,
-					childNodes = clickedListItem.parentNode.childNodes,
-					numChildNodes = childNodes.length,
-					nodeIndex = 0,
-					index;
-
-				for (var i = 0; i < numChildNodes; i++) {
-					if(childNodes[i].nodeType !== 1) { 
-						continue; 
-					}
-
-					if(childNodes[i] === clickedListItem) {
-						index = nodeIndex;
-						break;
-					}
-					nodeIndex++;
-				}
-
-
-
-				if(index >= 0) {
-					// open PhotoSwipe if valid index found
-					openPhotoSwipe( index, clickedGallery );
-				}
-				return false;
-			};
-
-			// parse picture index and gallery index from URL (#&pid=1&gid=2)
-			var photoswipeParseHash = function() {
-				var hash = window.location.hash.substring(1),
-				params = {};
-
-				if(hash.length < 5) {
-					return params;
-				}
-
-				var vars = hash.split('&');
-				for (var i = 0; i < vars.length; i++) {
-					if(!vars[i]) {
-						continue;
-					}
-					var pair = vars[i].split('=');  
-					if(pair.length < 2) {
-						continue;
-					}           
-					params[pair[0]] = pair[1];
-				}
-
-				if(params.gid) {
-					params.gid = parseInt(params.gid, 10);
-				}
-
-				return params;
-			};
-
-			var openPhotoSwipe = function(index, galleryElement, disableAnimation, fromURL) {
-				var pswpElement = document.querySelectorAll('.pswp')[0],
-					gallery,
-					options,
-					items;
-
-				items = parseThumbnailElements(galleryElement);
-
-				// define options (if needed)
-				options = {
-
-					// define gallery index (for URL)
-					galleryUID: galleryElement.getAttribute('data-pswp-uid'),
-
-					getThumbBoundsFn: function(index) {
-						// See Options -> getThumbBoundsFn section of documentation for more info
-						var thumbnail = items[index].el.getElementsByTagName('img')[0], // find thumbnail
-							pageYScroll = window.pageYOffset || document.documentElement.scrollTop,
-							rect = thumbnail.getBoundingClientRect(); 
-
-						return {x:rect.left, y:rect.top + pageYScroll, w:rect.width};
-					}
-
-				};
-
-				// PhotoSwipe opened from URL
-				if(fromURL) {
-					if(options.galleryPIDs) {
-						// parse real index when custom PIDs are used 
-						// http://photoswipe.com/documentation/faq.html#custom-pid-in-url
-						for(var j = 0; j < items.length; j++) {
-							if(items[j].pid == index) {
-								options.index = j;
+							if(childNodes[i] === clickedListItem) {
+								index = nodeIndex;
 								break;
 							}
+							nodeIndex++;
 						}
-					} else {
-						// in URL indexes start from 1
-						options.index = parseInt(index, 10) - 1;
+
+
+
+						if(index >= 0) {
+							// open PhotoSwipe if valid index found
+							openPhotoSwipe( index, clickedGallery );
+						}
+						return false;
+					};
+
+					// parse picture index and gallery index from URL (#&pid=1&gid=2)
+					var photoswipeParseHash = function() {
+						var hash = window.location.hash.substring(1),
+						params = {};
+
+						if(hash.length < 5) {
+							return params;
+						}
+
+						var vars = hash.split('&');
+						for (var i = 0; i < vars.length; i++) {
+							if(!vars[i]) {
+								continue;
+							}
+							var pair = vars[i].split('=');  
+							if(pair.length < 2) {
+								continue;
+							}           
+							params[pair[0]] = pair[1];
+						}
+
+						if(params.gid) {
+							params.gid = parseInt(params.gid, 10);
+						}
+
+						return params;
+					};
+
+					var openPhotoSwipe = function(index, galleryElement, disableAnimation, fromURL) {
+						var pswpElement = document.querySelectorAll('.pswp')[0],
+							gallery,
+							options,
+							items;
+
+						items = parseThumbnailElements(galleryElement);
+
+						// define options (if needed)
+						options = {
+
+							// define gallery index (for URL)
+							galleryUID: galleryElement.getAttribute('data-pswp-uid'),
+
+							getThumbBoundsFn: function(index) {
+								// See Options -> getThumbBoundsFn section of documentation for more info
+								var thumbnail = items[index].el.getElementsByTagName('img')[0], // find thumbnail
+									pageYScroll = window.pageYOffset || document.documentElement.scrollTop,
+									rect = thumbnail.getBoundingClientRect(); 
+
+								return {x:rect.left, y:rect.top + pageYScroll, w:rect.width};
+							}
+
+						};
+
+						// PhotoSwipe opened from URL
+						if(fromURL) {
+							if(options.galleryPIDs) {
+								// parse real index when custom PIDs are used 
+								// http://photoswipe.com/documentation/faq.html#custom-pid-in-url
+								for(var j = 0; j < items.length; j++) {
+									if(items[j].pid == index) {
+										options.index = j;
+										break;
+									}
+								}
+							} else {
+								// in URL indexes start from 1
+								options.index = parseInt(index, 10) - 1;
+							}
+						} else {
+							options.index = parseInt(index, 10);
+						}
+
+						// exit if index not found
+						if( isNaN(options.index) ) {
+							return;
+						}
+
+						if(disableAnimation) {
+							options.showAnimationDuration = 0;
+						}
+
+						// Pass data to PhotoSwipe and initialize it
+						gallery = new PhotoSwipe( pswpElement, PhotoSwipeUI_Default, items, options);
+						gallery.init();
+					};
+
+					// loop through all gallery elements and bind events
+					var galleryElements = document.querySelectorAll( gallerySelector );
+
+					for(var i = 0, l = galleryElements.length; i < l; i++) {
+						galleryElements[i].setAttribute('data-pswp-uid', i+1);
+						galleryElements[i].onclick = onThumbnailsClick;
 					}
-				} else {
-					options.index = parseInt(index, 10);
+
+					// Parse URL and open gallery if it contains #&pid=3&gid=1
+					var hashData = photoswipeParseHash();
+					if(hashData.pid && hashData.gid) {
+						openPhotoSwipe( hashData.pid ,  galleryElements[ hashData.gid - 1 ], true, true );
+					}
+				};
+
+				// execute above function
+				initPhotoSwipeFromDOM('.my-gallery');
+				<!-- Photo Swipe -->
+				
+				<!-- Modal -->
+				var modal = document.getElementById('contact_popup');
+				var storyModal = document.getElementById('story_popup');
+				var span = document.getElementsByClassName("close")[0];                                          
+				var storySpan = document.getElementsByClassName("story_close")[0];
+		 
+				function showContactsModal() {
+					modal.style.display = "block";
+					$('body').css("overflow", "hidden");
 				}
-
-				// exit if index not found
-				if( isNaN(options.index) ) {
-					return;
+				
+				function showStoryModal() {
+					storyModal.style.display = "block";
+					$('body').css("overflow", "hidden");
 				}
-
-				if(disableAnimation) {
-					options.showAnimationDuration = 0;
+		 
+				span.onclick = function() {
+					modal.style.display = "none";
+					$('body').css("overflow", "scroll");
 				}
+				
+				storySpan.onclick = function() {
+					storyModal.style.display = "none";
+					$('body').css("overflow", "scroll");
+				}
+		 
+				window.onclick = function(event) {
+					if (event.target == modal) {
+						modal.style.display = "none";
+						$('body').css("overflow", "scroll");
+					} else if (event.target == storyModal) {
+						storyModal.style.display = "none";
+						$('body').css("overflow", "scroll");
+					}
+				}
+				<!-- Modal end -->
+				
+				var hiddenStatus = true;
+				function showSoccerImage() {
+					var hiddenImage = document.getElementById("photo4_hidden");
 
-				// Pass data to PhotoSwipe and initialize it
-				gallery = new PhotoSwipe( pswpElement, PhotoSwipeUI_Default, items, options);
-				gallery.init();
-			};
-
-			// loop through all gallery elements and bind events
-			var galleryElements = document.querySelectorAll( gallerySelector );
-
-			for(var i = 0, l = galleryElements.length; i < l; i++) {
-				galleryElements[i].setAttribute('data-pswp-uid', i+1);
-				galleryElements[i].onclick = onThumbnailsClick;
-			}
-
-			// Parse URL and open gallery if it contains #&pid=3&gid=1
-			var hashData = photoswipeParseHash();
-			if(hashData.pid && hashData.gid) {
-				openPhotoSwipe( hashData.pid ,  galleryElements[ hashData.gid - 1 ], true, true );
-			}
-		};
-
-		// execute above function
-		initPhotoSwipeFromDOM('.my-gallery');
-		<!-- Photo Swipe -->
+					if (hiddenStatus) {
+						hiddenImage.style.display = 'inline';
+						hiddenStatus = false;
+					} else {
+						hiddenImage.style.display = 'none';
+						hiddenStatus = true;
+					}
+				}
+				
+				function copyAddress() {
+					copyToClipboard("경기 수원시 팔달구 중부대로 150 라마다프라자수원");
+					alert("주소가 복사되었습니다.");
+				}
+				
+				function copyBrideAccount() {
+					copyToClipboard("42891028966907");
+					alert("신부 계좌번호가 복사되었습니다.");
+				}
+				
+				function copyGroomAccount() {
+					copyToClipboard("9003217781906");
+					alert("신랑 계좌번호가 복사되었습니다.");
+				}
+				
+				function copyJeongHyeonAccount() {
+					copyToClipboard("61308452007506");
+					alert("혼주 계좌번호가 복사되었습니다.");
+				}
+				
+				function copyMinaMomAccount() {
+					copyToClipboard("1002113707802");
+					alert("혼주 계좌번호가 복사되었습니다.");
+				}
+				
+				function copyMinaDadAccount() {
+					copyToClipboard("1002833828295");
+					alert("혼주 계좌번호가 복사되었습니다.");
+				}
+				
+				function copyToClipboard(val) {
+					var t = document.createElement("textarea");
+					document.body.appendChild(t);
+					t.value = val;
+					t.select();
+					document.execCommand('copy');
+					document.body.removeChild(t);
+				}
+			</script>
+		</div>
 		
-		<!-- Modal -->
-		var modal = document.getElementById('contact_popup');
-		var storyModal = document.getElementById('story_popup');
-        var span = document.getElementsByClassName("close")[0];                                          
-		var storySpan = document.getElementsByClassName("story_close")[0];
- 
-        function showContactsModal() {
-			modal.style.display = "block";
-		}
-		
-		function showStoryModal() {
-			storyModal.style.display = "block";
-		}
- 
-        span.onclick = function() {
-            modal.style.display = "none";
-        }
-		
-		storySpan.onclick = function() {
-            storyModal.style.display = "none";
-        }
- 
-        window.onclick = function(event) {
-            if (event.target == modal) {
-                modal.style.display = "none";
-            } else if (event.target == storyModal) {
-				storyModal.style.display = "none";
-			}
-        }
-		<!-- Modal end -->
-		
-		var hiddenStatus = true;
-		function showSoccerImage() {
-			var hiddenImage = document.getElementById("photo4_hidden");
-
-			if (hiddenStatus) {
-				hiddenImage.style.display = 'inline';
-				hiddenStatus = false;
-			} else {
-				hiddenImage.style.display = 'none';
-				hiddenStatus = true;
-			}
-		}
-		
-		function copyAddress() {
-			copyToClipboard("경기 수원시 팔달구 중부대로 150 라마다프라자수원");
-            alert("주소가 복사되었습니다.");
-		}
-		
-		function copyBrideAccount() {
-			copyToClipboard("42891028966907");
-            alert("신부 계좌번호가 복사되었습니다.");
-		}
-		
-		function copyGroomAccount() {
-			copyToClipboard("9003217781906");
-            alert("신랑 계좌번호가 복사되었습니다.");
-		}
-		
-		function copyJeongHyeonAccount() {
-			copyToClipboard("61308452007506");
-            alert("혼주 계좌번호가 복사되었습니다.");
-		}
-		
-		function copyMinaMomAccount() {
-			copyToClipboard("1002113707802");
-            alert("혼주 계좌번호가 복사되었습니다.");
-		}
-		
-		function copyMinaDadAccount() {
-			copyToClipboard("1002833828295");
-            alert("혼주 계좌번호가 복사되었습니다.");
-		}
-		
-		function copyToClipboard(val) {
-            var t = document.createElement("textarea");
-            document.body.appendChild(t);
-            t.value = val;
-            t.select();
-            document.execCommand('copy');
-            document.body.removeChild(t);
-        }
-    </script>
-</div>
-</body>
+	</body>
 </html>

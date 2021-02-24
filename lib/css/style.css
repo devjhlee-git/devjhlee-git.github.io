@@ -70,9 +70,9 @@ section {
 .story_close {
 	position:absolute;
 	z-index: 1;
-	top: 1px;
+	top: -1px;
 	right: 7px;
-	color: gray;
+	color: #A6A6A6;
 	float: right;
 	font-size: 28px;
 }
@@ -455,17 +455,11 @@ section {
 	.story_image {
 		width: 336px;
 		height: 409px;
-		margin-left: auto;
-		margin-right: auto;
 	}
 	
 	.story_close {
-		position:absolute;
-		z-index: 1;
-		top: -4px;
+		top: -5px;
 		right: 2px;
-		color: gray;
-		float: right;
 		font-size: 25px;
 	}
 	
@@ -722,6 +716,23 @@ section {
 		top : 603px
 	}
 	
+	.modal_content_story {
+		width: 320px;
+		height: 389px;
+		margin-top: 15%;
+	}
+
+	.story_image {
+		width: 320px;
+		height: 389px;
+	}
+	
+	.story_close {
+		top: -5px;
+		right: 2px;
+		font-size: 25px;
+	}
+	
 	.modal-content {
 		margin-top: 30%;
 		width: 320px;
@@ -975,6 +986,23 @@ section {
 		background-position: center;
 		position: relative;
 		top : 527px
+	}
+	
+	.modal_content_story {
+		width: 280px;
+		height: 341px;
+		margin-top: 20%;
+	}
+
+	.story_image {
+		width: 280px;
+		height: 341px;
+	}
+	
+	.story_close {
+		top: -6px;
+		right: 1px;
+		font-size: 22px;
 	}
 		
 	.modal-content {
