@@ -200,6 +200,54 @@ section {
 	left: 103px;
 }
 
+.contact_popup_mina_first_call {
+	position: absolute;
+	z-index: 1;
+	width: 27px;
+	top: 99px;
+	right: 151px;
+}
+
+.contact_popup_mina_first_message {
+	position: absolute;
+	z-index: 1;
+	width: 33px;
+	top: 99px;
+	right: 102px;
+}
+
+.contact_popup_mina_second_call {
+	position: absolute;
+	z-index: 1;
+	width: 27px;
+	top: 266px;
+	right: 151px;
+}
+
+.contact_popup_mina_second_message {
+	position: absolute;
+	z-index: 1;
+	width: 33px;
+	top: 266px;
+	right: 102px;
+}
+
+.contact_popup_mina_mom_account {
+	position: absolute;
+	z-index: 1;
+	width: 237px;
+	top: 151px;
+	left: 105px;
+}
+
+.contact_popup_mina_dad_account {
+	position: absolute;
+	z-index: 1;
+	width: 237px;
+	top: 320px;
+	left: 105px;
+}
+
 .contact_popup_first_account {
 	position: absolute;
 	z-index: 1;
@@ -427,6 +475,54 @@ section {
 		left: 69px;
 	}
 
+	.contact_popup_mina_first_call{
+		position: absolute;
+		z-index: 1;
+		width: 18px;
+		top: 66px;
+		right: 101px;
+	}
+
+	.contact_popup_mina_first_message {
+		position: absolute;
+		z-index: 1;
+		width: 22px;
+		top: 66px;
+		right: 68px;
+	}
+
+	.contact_popup_mina_second_call {
+		position: absolute;
+		z-index: 1;
+		width: 18px;
+		top: 180px;
+		right: 101px;
+	}
+
+	.contact_popup_mina_second_message {
+		position: absolute;
+		z-index: 1;
+		width: 22px;
+		top: 180px;
+		right: 68px;
+	}
+
+	.contact_popup_mina_mom_account {
+		position: absolute;
+		z-index: 1;
+		width: 160px;
+		top: 101px;
+		left: 71px;
+	}
+
+	.contact_popup_mina_dad_account {
+		position: absolute;
+		z-index: 1;
+		width: 160px;
+		top: 215px;
+		left: 71px;
+	}
+
 	.contact_popup_first_account {
 		position: absolute;
 		z-index: 1;
@@ -638,6 +734,54 @@ section {
 		left: 65px;
 	}
 	
+	.contact_popup_mina_first_call{
+		position: absolute;
+		z-index: 1;
+		width: 16px;
+		top: 64px;
+		right: 98px;
+	}
+
+	.contact_popup_mina_first_message {
+		position: absolute;
+		z-index: 1;
+		width: 21px;
+		top: 63px;
+		right: 65px;
+	}
+
+	.contact_popup_mina_second_call {
+		position: absolute;
+		z-index: 1;
+		width: 16px;
+		top: 172px;
+		right: 98px;
+	}
+
+	.contact_popup_mina_second_message {
+		position: absolute;
+		z-index: 1;
+		width: 21px;
+		top: 171px;
+		right: 65px;
+	}
+
+	.contact_popup_mina_mom_account {
+		position: absolute;
+		z-index: 1;
+		width: 152px;
+		top: 96px;
+		left: 67px;
+	}
+
+	.contact_popup_mina_dad_account {
+		position: absolute;
+		z-index: 1;
+		width: 152px;
+		top: 205px;
+		left: 67px;
+	}
+	
 	.contact_popup_first_account {
 		position: absolute;
 		z-index: 1;
@@ -843,6 +987,54 @@ section {
 		width: 131px;
 		top: 153px;
 		left: 57px;
+	}
+	
+	.contact_popup_mina_first_call{
+		position: absolute;
+		z-index: 1;
+		width: 14px;
+		top: 56px;
+		right: 86px;
+	}
+
+	.contact_popup_mina_first_message {
+		position: absolute;
+		z-index: 1;
+		width: 18px;
+		top: 56px;
+		right: 57px;
+	}
+
+	.contact_popup_mina_second_call {
+		position: absolute;
+		z-index: 1;
+		width: 14px;
+		top: 150px;
+		right: 86px;
+	}
+
+	.contact_popup_mina_second_message {
+		position: absolute;
+		z-index: 1;
+		width: 18px;
+		top: 150px;
+		right: 57px;
+	}
+
+	.contact_popup_mina_mom_account {
+		position: absolute;
+		z-index: 1;
+		width: 134px;
+		top: 84px;
+		left: 58px;
+	}
+
+	.contact_popup_mina_dad_account {
+		position: absolute;
+		z-index: 1;
+		width: 134px;
+		top: 179px;
+		left: 58px;
 	}
 	
 	.contact_popup_first_account {

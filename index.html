@@ -7,7 +7,8 @@
     <meta property="og:url" content="https://devjhlee-git.github.io">
     <meta property="og:description" content="2021년 4월 3일(토) 12시 라마다프라자수원">
     <meta property="og:image" content="https://devjhlee-git.github.io/photo/metatag_image.jpg">
-    
+    <title>이정현 & 전민아의 모바일 청접장 🕊</title>
+
 	<script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=62p503qrkk"></script>
 
 	<link rel="stylesheet" href="lib/css/bootstrap.css">
@@ -84,22 +85,30 @@
 					</section>
 					
 					<section id="contact_popup_mina" style="display: none">
-						<img src="photo/mobile_popup_jeonghyeon.png" class="contact_popup">
+						<img src="photo/mobile_popup_mina.png" class="contact_popup">
 						
-						<a href="sms:010-3123-1233">
-							<img src="photo/mobile_popup_message.png" class="contact_popup_jeonghyeon_first">
+						<a href="tel:010-3799-6931">
+							<img src="photo/mobile_popup_call.png" class="contact_popup_mina_first_call">
 						</a>
 						
-						<a href="sms:010-6691-1185">
-							<img src="photo/mobile_popup_message.png" class="contact_popup_jeonghyeon_second">
+						<a href="sms:010-3799-6931">
+							<img src="photo/mobile_popup_message.png" class="contact_popup_mina_first_message">
 						</a>
 						
-						<a href="javascript:void(0);" onclick="copyBrideAccount()">
-							<img src="photo/mobile_popup_button_bride_account.png" class="contact_popup_first_account">
+						<a href="tel:010-5473-4894">
+							<img src="photo/mobile_popup_call.png" class="contact_popup_mina_second_call">
 						</a>
 						
-						<a href="javascript:void(0);" onclick="copyGroomAccount()">
-							<img src="photo/mobile_popup_button_groom_account.png" class="contact_popup_second_account">
+						<a href="sms:010-5473-4894">
+							<img src="photo/mobile_popup_message.png" class="contact_popup_mina_second_message">
+						</a>
+						
+						<a href="javascript:void(0);" onclick="copyMinaMomAccount()">
+							<img src="photo/mobile_popup_button_mina_mom_account.png" class="contact_popup_mina_mom_account">
+						</a>
+						
+						<a href="javascript:void(0);" onclick="copyMinaDadAccount()">
+							<img src="photo/mobile_popup_button_mina_dad_account.png" class="contact_popup_mina_dad_account">
 						</a>
 					</section>
 				</div>
@@ -341,7 +350,7 @@
     <script>
 		(function() {
 			var urlParams = new URLSearchParams(window.location.search);
-			var metaTitle = "전민아 & 이정현의 모바일 청접장 🕊"
+			var metaTitle = "이정현 & 전민아의 모바일 청접장 🕊"
 			
 			var contactButton = document.getElementById('contact');
 			var parentContactButton = document.getElementById('contact_parent');
@@ -650,6 +659,16 @@
 		
 		function copyJeongHyeonAccount() {
 			copyToClipboard("61308452007506");
+            alert("혼주 계좌번호가 복사되었습니다.");
+		}
+		
+		function copyMinaMomAccountAccount() {
+			copyToClipboard("1002113707802");
+            alert("혼주 계좌번호가 복사되었습니다.");
+		}
+		
+		function copyMinaDadAccount() {
+			copyToClipboard("1002833828295");
             alert("혼주 계좌번호가 복사되었습니다.");
 		}
 		
