@@ -5,6 +5,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta property="og:type" content="website">
 		<meta property="og:url" content="https://devjhlee-git.github.io">
+		<meta property="og:title" content="이정현 & 전민아의 모바일 청첩장 🕊">
 		<meta property="og:description" content="2021년 4월 3일(토) 12시 라마다프라자수원">
 		<meta property="og:image" content="https://devjhlee-git.github.io/photo/metatag_image.jpg">
 		<title>이정현 & 전민아의 모바일 청첩장 🕊</title>
@@ -384,7 +385,6 @@
 			<script>
 				(function() {
 					var urlParams = new URLSearchParams(window.location.search);
-					var metaTitle = "이정현 & 전민아의 모바일 청첩장 🕊"
 					
 					var contactButton = document.getElementById('contact');
 					var parentContactButton = document.getElementById('contact_parent');
@@ -394,7 +394,6 @@
 					var contactPopupMina = document.getElementById('contact_popup_mina');
 					
 					if (urlParams.has('jeonghyeon')) {
-						metaTitle = "우리 아들 결혼합니다.";
 						contactButton.style.display = "none";
 						parentContactButton.style.display = "inline";
 						
@@ -402,7 +401,6 @@
 						contactPopupJeongHyeon.style.display = "inline";
 						contactPopupMina.style.display = "none";
 					} else if (urlParams.has('mina')) {
-						metaTitle = "우리 딸 결혼합니다.";
 						contactButton.style.display = "none";
 						parentContactButton.style.display = "inline";
 						
@@ -410,8 +408,6 @@
 						contactPopupJeongHyeon.style.display = "none";
 						contactPopupMina.style.display = "inline";
 					}
-					
-					$("meta[property='og:title']").attr("content", metaTitle);
 				}());
 						
 				<!-- Naver Map -->
