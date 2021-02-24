@@ -7,8 +7,7 @@
     <meta property="og:url" content="https://devjhlee-git.github.io">
     <meta property="og:description" content="2021년 4월 3일(토) 12시 라마다프라자수원">
     <meta property="og:image" content="https://devjhlee-git.github.io/photo/metatag_image.jpg">
-    <title>전민아 & 이정현의 모바일 청접장 🕊</title>
-
+    
 	<script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=62p503qrkk"></script>
 
 	<link rel="stylesheet" href="lib/css/bootstrap.css">
@@ -38,8 +37,8 @@
 			
 			<div id="contact_popup" class="modal">
 				<div class="modal-content" >
-					<section>
-						<div class="close">&times;</div> 
+					<div class="close">&times;</div> 
+					<section id="contact_popup_default">
 						<img src="photo/mobile_popup.png" class="contact_popup">
 						
 						<a href="sms:010-3123-1233">
@@ -48,6 +47,51 @@
 						
 						<a href="sms:010-6691-1185">
 							<img src="photo/mobile_popup_message.png" class="contact_popup_second">
+						</a>
+						
+						<a href="javascript:void(0);" onclick="copyBrideAccount()">
+							<img src="photo/mobile_popup_button_bride_account.png" class="contact_popup_first_account">
+						</a>
+						
+						<a href="javascript:void(0);" onclick="copyGroomAccount()">
+							<img src="photo/mobile_popup_button_groom_account.png" class="contact_popup_second_account">
+						</a>
+					</section>
+					
+					<section id="contact_popup_jeonghyeon" style="display: none">
+						<img src="photo/mobile_popup_jeonghyeon.png" class="contact_popup">
+						
+						<a href="tel:010-5682-1185">
+							<img src="photo/mobile_popup_call.png" class="contact_popup_jeonghyeon_first_call">
+						</a>
+						
+						<a href="sms:010-5682-1185">
+							<img src="photo/mobile_popup_message.png" class="contact_popup_jeonghyeon_first_message">
+						</a>
+						
+						<a href="tel:010-6692-1185">
+							<img src="photo/mobile_popup_call.png" class="contact_popup_jeonghyeon_second_call">
+						</a>
+						
+						<a href="sms:010-6692-1185">
+							<img src="photo/mobile_popup_message.png" class="contact_popup_jeonghyeon_second_message">
+						</a>
+						
+						<a href="javascript:void(0);" onclick="copyJeongHyeonAccount()">
+							<img src="photo/mobile_popup_button_jeonghyeon_account.png" class="contact_popup_jeonghyeon_account">
+						</a>
+					
+					</section>
+					
+					<section id="contact_popup_mina" style="display: none">
+						<img src="photo/mobile_popup_jeonghyeon.png" class="contact_popup">
+						
+						<a href="sms:010-3123-1233">
+							<img src="photo/mobile_popup_message.png" class="contact_popup_jeonghyeon_first">
+						</a>
+						
+						<a href="sms:010-6691-1185">
+							<img src="photo/mobile_popup_message.png" class="contact_popup_jeonghyeon_second">
 						</a>
 						
 						<a href="javascript:void(0);" onclick="copyBrideAccount()">
@@ -302,14 +346,26 @@
 			var contactButton = document.getElementById('contact');
 			var parentContactButton = document.getElementById('contact_parent');
 			
+			var contactPopupDefault = document.getElementById('contact_popup_default');
+			var contactPopupJeongHyeon = document.getElementById('contact_popup_jeonghyeon');
+			var contactPopupMina = document.getElementById('contact_popup_mina');
+			
 			if (urlParams.has('jeonghyeon')) {
 				metaTitle = "우리 아들 결혼합니다.";
 				contactButton.style.display = "none";
 				parentContactButton.style.display = "inline";
+				
+				contactPopupDefault.style.display = "none";
+				contactPopupJeongHyeon.style.display = "inline";
+				contactPopupMina.style.display = "none";
 			} else if (urlParams.has('mina')) {
 				metaTitle = "우리 딸 결혼합니다.";
 				contactButton.style.display = "none";
 				parentContactButton.style.display = "inline";
+				
+				contactPopupDefault.style.display = "none";
+				contactPopupJeongHyeon.style.display = "none";
+				contactPopupMina.style.display = "inline";
 			}
 			
 			$("meta[property='og\\:title']").attr("content", metaTitle);
@@ -590,6 +646,11 @@
 		function copyGroomAccount() {
 			copyToClipboard("9003217781906");
             alert("신랑 계좌번호가 복사되었습니다.");
+		}
+		
+		function copyJeongHyeonAccount() {
+			copyToClipboard("61308452007506");
+            alert("혼주 계좌번호가 복사되었습니다.");
 		}
 		
 		function copyToClipboard(val) {
