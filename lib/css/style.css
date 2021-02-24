@@ -446,6 +446,29 @@ section {
 		height: 301px;
 	}
 	
+	.modal_content_story {
+		width: 336px;
+		height: 409px;
+		margin-top: 150px;
+	}
+
+	.story_image {
+		width: 336px;
+		height: 409px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+	.story_close {
+		position:absolute;
+		z-index: 1;
+		top: -4px;
+		right: 2px;
+		color: gray;
+		float: right;
+		font-size: 25px;
+	}
+	
 	.contact_popup {
 		width: 336px;
 		height: 301px;
