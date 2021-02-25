@@ -2,7 +2,7 @@ body {
 	min-height: 100%;
 	height: 100%;
 	color: #000;
-	background-color: #FDFDFD;
+	background-color: #000000;
 }
 
 html {
@@ -36,16 +36,18 @@ section {
 	width: 500px;
 	height: 448px;
 	border-radius: 20px !important; 
-	margin-top: 150px;
+	top: 50%;
+	transform: translateY(-50%);
 	background-color: #F9F9F9;
 }
 
 .modal_content_story {
-	margin-left: auto;
-	margin-right: auto;
 	width: 500px;
 	height: 608px;
-	margin-top: 150px;
+	position: absolute;
+	top: 45%;
+	left: 50%;
+	transform: translate(-50%, -45%) !important;
 	background-color: #F9F9F9;
 }
 
@@ -59,12 +61,18 @@ section {
 .close {
 	position:absolute;
 	z-index: 1;
-	top: 10px;
+	top: 5px;
 	right: 10px;
 	color: black;
 	float: right;
 	font-size: 28px;
-	font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+	color: white;
+	text-decoration: none;
+	cursor: pointer;
 }
 
 .story_close {
@@ -80,13 +88,6 @@ section {
 .story_close:hover,
 .story_close:focus {
 	color: black;
-	text-decoration: none;
-	cursor: pointer;
-}
-
-.close:hover,
-.close:focus {
-	color: white;
 	text-decoration: none;
 	cursor: pointer;
 }
@@ -145,7 +146,7 @@ section {
 .main_ticket {
 	background-size: 640px auto;
 	width: 100%;
-	height: 1410px;
+	height: 1394px;
 	position: relative;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -156,14 +157,14 @@ section {
 	width: 478px;
 	background-position: center;
 	position: relative;
-	top : 1200px
+	top : 1184px
 }
 
 .story_button {
 	width: 478px;
 	background-position: center;
 	position: relative;
-	top : 1207px
+	top : 1191px
 }
 
 .contact_popup {
@@ -423,25 +424,24 @@ section {
 @media (max-width: 639px) {
 	.main_ticket {
 		background-size:375px auto;
-		height:828px;
+		height:817px;
 	}
 
 	.contact_button {
 		width: 282px;
 		background-position: center;
 		position: relative;
-		top : 704px
+		top : 693px
 	}
 	
 	.story_button {
 		width: 282px;
 		background-position: center;
 		position: relative;
-		top : 708px
+		top : 697px
 	}
 	
 	.modal-content {
-		margin-top: 30%;
 		width: 336px;
 		height: 301px;
 	}
@@ -449,7 +449,6 @@ section {
 	.modal_content_story {
 		width: 336px;
 		height: 409px;
-		margin-top: 150px;
 	}
 
 	.story_image {
@@ -590,7 +589,7 @@ section {
 
 	.notice {
 		background-size:375px auto;
-		height:353px;
+		height:347px;
 	}
 
 	.photo_booth {
@@ -692,34 +691,33 @@ section {
 
 	.end{
 		background-size: 375px auto;
-		height: 633px;
+		height: 630px;
 	}
 }
 
 @media (max-width: 320px) {
 	.main_ticket {
 		background-size:320px auto;
-		height:705px;
+		height:695px;
 	}
 	
 	.contact_button {
 		width: 240px;
 		background-position: center;
 		position: relative;
-		top : 600px;
+		top : 590px;
 	}
 	
 	.story_button {
 		width: 240px;
 		background-position: center;
 		position: relative;
-		top : 603px
+		top : 593px
 	}
 	
 	.modal_content_story {
 		width: 320px;
 		height: 389px;
-		margin-top: 15%;
 	}
 
 	.story_image {
@@ -734,7 +732,6 @@ section {
 	}
 	
 	.modal-content {
-		margin-top: 30%;
 		width: 320px;
 		height: 287px;
 	}
@@ -866,7 +863,7 @@ section {
 		
 	.notice {
 		background-size:320px auto;
-		height:300px;
+		height:296px;
 	}
 
 	.photo_booth {
@@ -931,12 +928,12 @@ section {
 	
 	.photo_4{
 		background-size: 320px auto;
-		height: 564px;
+		height: 563px;
 	}
 	
 	.photo_4_soccer{
 		width: 320px;
-		height: 564px;
+		height: 563px;
 	}
 
 	.information{
@@ -971,27 +968,26 @@ section {
 @media (max-width: 280px) {
 	.main_ticket {
 		background-size:280px auto;
-		height:615px;
+		height:607px;
 	}
 
 	.contact_button {
 		width: 211px;
 		background-position: center;
 		position: relative;
-		top : 524px;
+		top : 516px;
 	}
 	
 	.story_button {
 		width: 211px;
 		background-position: center;
 		position: relative;
-		top : 527px
+		top : 519px
 	}
 	
 	.modal_content_story {
 		width: 280px;
 		height: 341px;
-		margin-top: 20%;
 	}
 
 	.story_image {
@@ -1006,7 +1002,6 @@ section {
 	}
 		
 	.modal-content {
-		margin-top: 30%;
 		width: 280px;
 		height: 251px;
 	}
@@ -1138,7 +1133,7 @@ section {
 
 	.notice {
 		background-size:280px auto;
-		height:263px;
+		height:260px;
 	}
 
 	.photo_booth {
